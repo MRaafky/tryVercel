@@ -10,7 +10,8 @@ function Halaman1() {
             <p>Part of the Hubung Group, it is a student empowerment media platform, providing information, resources, and creative outlets that encourage critical thinking, design thinking, and self-development.</p>
             <p>Addresses academic and non-academic issues affecting students, with a focus on problem solving and creating real impact.</p>
         </div>
-        <img src={Laptop} className='laptopHal1'></img>
+        <img src={Laptop} className='laptopHal1' 
+        class="hidden"></img>
     </div>
   )
 }
