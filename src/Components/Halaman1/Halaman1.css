@@ -1,0 +1,149 @@
+.containerHalaman1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+    z-index: 1;
+}
+
+.containerIsiHal1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.judulHal1 {
+    font-family: HelveticaBold;
+}
+
+.containerIsiHal1 p {
+    font-family: Helvetica;
+}
+
+/* 1. Smartphone (Portrait) */
+@media only screen and (max-width: 320px) and (max-height: 568px) {
+    /* Gaya untuk handphone kecil (contoh: iPhone SE) */
+    body {
+        font-size: 12px; /* Ukuran font untuk handphone kecil */
+    }
+
+    .containerIsiHal1 {
+        width: 252px;
+        padding: 10px;
+        gap: 10px;
+        margin-top: 100px;
+    }
+
+    .laptopHal1 {
+        width: 200px;
+        position: relative;
+        left: 50px;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 384px) and (max-height: 800px) {
+    /* Gaya untuk handphone sedang (contoh: Samsung Galaxy S5) */
+    body {
+        font-size: 14px; /* Ukuran font untuk handphone sedang */
+    }
+
+    .containerIsiHal1 {
+        width: 270px;
+        padding: 10px;
+        gap: 15px;
+        margin-top: 150px;
+    }
+
+    .laptopHal1 {
+        width: 200px;
+        position: relative;
+        left: 50px;
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (min-width: 385px) and (max-width: 414px) and (max-height: 896px) {
+    /* Gaya untuk handphone besar (contoh: iPhone 8 Plus) */
+    body {
+        font-size: 16px; /* Ukuran font untuk handphone besar */
+    }
+
+    .containerIsiHal1 {
+        width: 300px;
+        padding: 10px;
+        gap: 15px;
+        margin-top: 150px;
+    }
+
+    .judulHal1 {
+        font-size: 24px;
+    }
+
+    .containerHalaman1 p {
+        font-size: 16px;
+    }
+
+    .laptopHal1 {
+        width: 200px;
+        position: relative;
+        left: 70px;
+        margin-top: 30px;
+    }
+}
+
+/* 2. Smartphone (Landscape) */
+@media only screen and (min-width: 321px) and (max-width: 480px) and (min-height: 321px) {
+    /* Gaya untuk handphone kecil dalam orientasi lanskap */
+    body {
+        font-size: 14px; /* Ukuran font untuk handphone kecil dalam lanskap */
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 600px) and (min-height: 321px) {
+    /* Gaya untuk handphone sedang dalam orientasi lanskap */
+    body {
+        font-size: 16px; /* Ukuran font untuk handphone sedang dalam lanskap */
+    }
+}
+
+/* 3. Tablet (Portrait) */
+@media only screen and (min-width: 601px) and (max-width: 768px) and (max-height: 1024px) {
+    /* Gaya untuk tablet kecil dalam orientasi potret */
+    body {
+        font-size: 18px; /* Ukuran font untuk tablet kecil */
+    }
+}
+
+/* 4. Tablet (Landscape) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) and (min-height: 600px) {
+    /* Gaya untuk tablet besar dalam orientasi lanskap */
+    body {
+        font-size: 20px; /* Ukuran font untuk tablet besar */
+    }
+}
+
+/* 5. Desktop (Kecil) */
+@media only screen and (min-width: 1025px) and (max-width: 1280px) and (min-height: 600px) {
+    /* Gaya untuk desktop kecil */
+    body {
+        font-size: 22px; /* Ukuran font untuk desktop kecil */
+    }
+}
+
+/* 6. Desktop (Menengah) */
+@media only screen and (min-width: 1281px) and (max-width: 1440px) and (min-height: 600px) {
+    /* Gaya untuk desktop menengah */
+    body {
+        font-size: 24px; /* Ukuran font untuk desktop menengah */
+    }
+}
+
+/* 7. Desktop (Besar) */
+@media only screen and (min-width: 1441px) {
+    /* Gaya untuk desktop besar */
+    body {
+        font-size: 26px; /* Ukuran font untuk desktop besar */
+    }
+}

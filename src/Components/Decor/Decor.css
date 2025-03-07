@@ -1,0 +1,179 @@
+.containerDecor {
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    background: none;
+    z-index: 2;
+}
+
+.likeDecor {
+    position: absolute;
+}
+
+.loveDecor {
+    position: absolute;
+}
+
+.spray1Decor {
+    position: absolute;
+}
+
+.spray2Decor {
+    position: absolute;
+    display: none;
+    top: 300px;
+    width: 200px;
+    height: 300px;
+    border-radius: 100px;
+    z-index: 2;
+    background: -webkit-radial-gradient( circle at 40% 55%, rgba(255, 255, 255, 1) 25%, rgba(0, 0, 255, 0.8) 80%);
+    background: radial-gradient( circle at 40% 55%, rgba(255, 255, 255, 1) 25%, rgba(0, 0, 255, 0.8) 80%);
+}
+
+@media only screen and (max-width: 320px) and (max-height: 568px) {
+    /* Gaya untuk handphone kecil (contoh: iPhone SE) */
+    body {
+        font-size: 12px; /* Ukuran font untuk handphone kecil */
+    }
+
+    .likeDecor {
+        width: 60px;
+        top: 120px;
+        left: 40px;
+    }
+
+    .loveDecor {
+        width: 60px;
+        top: 350px;
+        left: 200px;
+    }
+
+    .spray1Decor {
+        width: 100px;
+        height: 100px;
+        background: -webkit-radial-gradient(circle at 50% 50%, rgba(255, 165, 0, 1) 20%, rgba(255, 69, 0, 1) 80%);
+        background: radial-gradient(circle at 50% 50%, rgba(255, 165, 0, 1) 20%, rgba(255, 69, 0, 1) 80%);
+        border-radius: 50px;
+        top: -30px;
+        left: 250px;
+        filter: blur(45px);
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 384px) and (max-height: 800px) {
+    /* Gaya untuk handphone sedang (contoh: Samsung Galaxy S5) */
+    body {
+        font-size: 14px; /* Ukuran font untuk handphone sedang */
+    }
+
+    .likeDecor {
+        width: 70px;
+        top: 150px;
+        left: 55px;
+    }
+
+    .loveDecor {
+        width: 70px;
+        top: 400px;
+        left: 230px;
+    }
+
+    .spray1Decor {
+        width: 150px;
+        height: 150px;
+        background: -webkit-radial-gradient(circle at 50% 50%, rgba(255, 165, 0, 1) 20%, rgba(255, 69, 0, 1) 80%);
+        background: radial-gradient(circle at 50% 50%, rgba(255, 165, 0, 1) 20%, rgba(255, 69, 0, 1) 80%);
+        border-radius: 50px;
+        top: -50px;
+        left: 260px;
+        filter: blur(50px);
+    }
+}
+
+@media only screen and (min-width: 385px) and (max-width: 414px) and (max-height: 896px) {
+    /* Gaya untuk handphone besar (contoh: iPhone 8 Plus) */
+    body {
+        font-size: 16px; /* Ukuran font untuk handphone besar */
+    }
+
+    .likeDecor {
+        width: 85px;
+        top: 170px;
+        left: 55px;
+    }
+
+    .loveDecor {
+        width: 85px;
+        top: 460px;
+        left: 230px;
+    }
+
+    .spray1Decor {
+        width: 150px;
+        height: 150px;
+        background: -webkit-radial-gradient(circle at 50% 50%, rgba(255, 165, 0, 1) 20%, rgba(255, 69, 0, 1) 80%);
+        background: radial-gradient(circle at 50% 50%, rgba(255, 165, 0, 1) 20%, rgba(255, 69, 0, 1) 80%);
+        border-radius: 50px;
+        top: -60px;
+        left: 280px;
+        filter: blur(50px);
+    }
+}
+
+/* 2. Smartphone (Landscape) */
+@media only screen and (min-width: 321px) and (max-width: 480px) and (min-height: 321px) {
+    /* Gaya untuk handphone kecil dalam orientasi lanskap */
+    body {
+        font-size: 14px; /* Ukuran font untuk handphone kecil dalam lanskap */
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 600px) and (min-height: 321px) {
+    /* Gaya untuk handphone sedang dalam orientasi lanskap */
+    body {
+        font-size: 16px; /* Ukuran font untuk handphone sedang dalam lanskap */
+    }
+}
+
+/* 3. Tablet (Portrait) */
+@media only screen and (min-width: 601px) and (max-width: 768px) and (max-height: 1024px) {
+    /* Gaya untuk tablet kecil dalam orientasi potret */
+    body {
+        font-size: 18px; /* Ukuran font untuk tablet kecil */
+    }
+}
+
+/* 4. Tablet (Landscape) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) and (min-height: 600px) {
+    /* Gaya untuk tablet besar dalam orientasi lanskap */
+    body {
+        font-size: 20px; /* Ukuran font untuk tablet besar */
+    }
+}
+
+/* 5. Desktop (Kecil) */
+@media only screen and (min-width: 1025px) and (max-width: 1280px) and (min-height: 600px) {
+    /* Gaya untuk desktop kecil */
+    body {
+        font-size: 22px; /* Ukuran font untuk desktop kecil */
+    }
+}
+
+/* 6. Desktop (Menengah) */
+@media only screen and (min-width: 1281px) and (max-width: 1440px) and (min-height: 600px) {
+    /* Gaya untuk desktop menengah */
+    body {
+        font-size: 24px; /* Ukuran font untuk desktop menengah */
+    }
+}
+
+/* 7. Desktop (Besar) */
+@media only screen and (min-width: 1441px) {
+    /* Gaya untuk desktop besar */
+    body {
+        font-size: 26px; /* Ukuran font untuk desktop besar */
+    }
+}
