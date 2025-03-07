@@ -11,17 +11,7 @@ function Halaman1() {
             <p>Addresses academic and non-academic issues affecting students, with a focus on problem solving and creating real impact.</p>
         </div>
         <img src={Laptop} className='laptopHal1' 
-        class="hidden"></img>
-         <div class="bg-gray-100 flex items-center justify-center min-h-screen">
-         <div class="bg-blue-500 
-                w-64 h-64 
-                md:w-96 md:h-96 
-                rounded-lg 
-                shadow-lg 
-                flex items-center justify-center text-white text-lg">
-        Kotak Responsif
-    </div>
-         </div>
+        class=""></img>
     </div>
   )
 }
