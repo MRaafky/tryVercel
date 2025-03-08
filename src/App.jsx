@@ -9,7 +9,7 @@ function App() {
   return (
     <div className='contaunerAll'>
       <Landing></Landing>
-      <Decor></Decor>
+      {/* <Decor></Decor> */}
       <Halaman1></Halaman1>
     </div>
   )

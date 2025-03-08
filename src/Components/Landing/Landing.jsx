@@ -1,26 +1,43 @@
 import React from "react";
-// import "./Landing.css"
+import "./Landing.css"
 import "./font.css";
 
 function Landing() {
   return (
     <div
-      className="containerLanding"
-      class="w-full h-auto flex flex-col items-center z-[1]  "
+      class=" bg-[black] 
+      text-[white] 
+      w-full h-auto 
+      flex flex-col 
+      items-center 
+      z-[1]  "
     >
       <h1
-        className="judulLanding"
-        class="text-[35px] mt-[230px] font-family: HelveticaBold"
+        class="HelveticaBold 
+        text-[40px] 
+        mt-[320px]"
       >
         Unteyo Journey
       </h1>
-      <p class="text-[15px] mt-[5px] font-family: Helvetica">
+      <p class="Helvetica 
+      text-[18px] 
+      mt-[4px]">
         Greeting Quality Students
       </p>
-      <button class="transition-[0.5s] hover:text-[black] hover:bg-[white] hover:transition-[0.5s] font-family: Helvetica">
+      <button class="Helvetica
+      w-[250px] h-[40px]
+      mt-[290px] 
+      transition-[0.5s] 
+      hover:text-[black] 
+      hover:bg-[white] 
+      hover:transition-[0.5s] 
+      border-[1px] border-solid border-[white] border rounded-[10px]  
+      ">
         Explore Our Journey
       </button>
-      <p class="text-xs mt-2 font-family: Helvetica">#BeWise</p>
+      <p class="Helvetica 
+      text-[15px] 
+      mt-[9px]">#BeWise</p>
     </div>
   );
 }

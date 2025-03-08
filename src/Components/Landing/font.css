@@ -2,3 +2,11 @@
     font-family: HelveticaBold;
     src: url(../../assets/helvetica-255-webfont/Helvetica-Bold.woff);
 }
+
+.HelveticaBold {
+    font-family: HelveticaBold;
+}
+
+.Helvetica {
+    font-family: Helvetica;
+}
