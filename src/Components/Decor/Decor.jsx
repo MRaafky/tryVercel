@@ -10,16 +10,19 @@ function Decor() {
     overflow-hidden 
     z-[2] 
     left-0 top-0">
-        <img  class="absolute 
+        <img  class="relative 
         w-[60px] 
-        left-10 top-[120px]" src={like}></img>
+        left-[50px] top-[120px]" src={like}></img>
         <img class="absolute 
         w-[60px] 
-        left-[200px] top-[350px]" src={love}></img>
+        left-[250px] top-[400px]
+        " src={love}></img>
         <div class="spray1Decor 
-        absolute w-[100px] h-[100px] 
-        top-[-30px] 
-        blur-[45px] left-[250px]
+        absolute 
+        w-[300px] h-[300px] 
+        top-[-290px] 
+        blur-[200px] 
+        left-[290px]
         rounded-[50px] "></div>
         <div class="spray2Decor 
         absolute 
