@@ -15,7 +15,7 @@ function Landing() {
       <h1
         class="HelveticaBold 
         text-[40px] 
-        mt-[320px]"
+        mt-[200px]"
       >
         Unteyo Journey
       </h1>
@@ -26,11 +26,19 @@ function Landing() {
       </p>
       <button class="Helvetica
       w-[250px] h-[40px]
-      mt-[290px] 
+      mt-[290px]
+      bg-[black]
+      text-[white] 
       transition-[0.5s] 
       hover:text-[black] 
       hover:bg-[white] 
-      hover:transition-[0.5s] 
+      hover:transition-[0.5s]
+      hover: border-[white]
+      // active atau focus untuk efek hover mobile 
+      active:text-[black] 
+      active:bg-[white] 
+      active:transition-[0.5s]
+      active: border-[white] 
       border-[1px] border-solid border-[white] border rounded-[10px]  
       ">
         Explore Our Journey
