@@ -9,7 +9,7 @@ function App() {
   return (
     <div class="bg-[black]">
       <Landing></Landing>
-      {/* <Decor></Decor> */}
+      <Decor></Decor>
       <Halaman1></Halaman1>
     </div>
   )
