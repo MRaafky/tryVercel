@@ -1,6 +1,6 @@
 import React from "react";
 import "./Landing.css"
-import "./font.css";
+import "../font.css";
 
 function Landing() {
   return (
@@ -15,7 +15,7 @@ function Landing() {
       <h1
         class="HelveticaBold 
         text-[40px] 
-        mt-[200px]"
+        mt-[250px]"
       >
         Unteyo Journey
       </h1>
@@ -26,7 +26,7 @@ function Landing() {
       </p>
       <button class="Helvetica
       w-[250px] h-[40px]
-      mt-[290px]
+      mt-[250px]
       bg-[black]
       text-[white] 
       transition-[0.5s] 
