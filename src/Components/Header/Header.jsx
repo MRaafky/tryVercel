@@ -15,11 +15,6 @@ function Header() {
 
     useEffect(() => {
         const handleScroll = () => {
-        //   if (window.scrollY > 0) {
-        //     header.classList.add("scrolled");
-        //   } else {
-        //     header.classList.remove("scrolled");
-        //   }
         setIsScrolled(!isScrolled)
         };
     

@@ -27,6 +27,7 @@ function Landing() {
       </p>
       <button class="Helvetica
       w-[250px] h-[40px]
+      text-[12px]
       mt-[250px]
       bg-[black]
       text-[white] 
@@ -40,7 +41,8 @@ function Landing() {
       active:bg-[white] 
       active:transition-[0.5s]
       active: border-[white] 
-      border-[1px] border-solid border-[white] border rounded-[10px]  
+      border-[1px] border-solid border-[white] border rounded-[10px]
+      z-[2]  
       ">
         Explore Our Journey
       </button>

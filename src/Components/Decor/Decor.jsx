@@ -1,6 +1,7 @@
 import React from 'react'
 import like from "../../assets/like.png"
 import love from "../../assets/love.png"
+import WaveAnimation from "../../Components/WaveDot"
 import "./Decor.css"
 
 function Decor() {
@@ -14,23 +15,41 @@ function Decor() {
         w-[60px] 
         left-[50px] top-[120px]" src={like}></img>
         <img class="absolute 
-        w-[60px] 
-        left-[250px] top-[400px]
+        w-[70px] 
+        left-[280px] top-[400px]
         " src={love}></img>
         <div class="spray1Decor 
         absolute 
         w-[300px] h-[300px] 
-        top-[-290px] 
-        blur-[200px] 
+        top-[-200px] 
+        blur-[90px] 
         left-[290px]
         rounded-[50px] "></div>
+        <WaveAnimation></WaveAnimation>
         <div class="spray2Decor 
-        absolute 
-        hidden 
-        w-[200px] h-[300px] 
-        z-[2] 
+        absolute  
+        w-[200px] h-[300px]
+        blur-[70px] 
+        z-[0] 
         rounded-[100px] 
-        top-[300px]"></div>
+        top-[600px] left-[-100px]"></div>
+        <div class="spray2-2Decor 
+        absolute  
+        w-[200px] h-[300px]
+        blur-[70px] 
+        z-[0] 
+        rounded-[100px] 
+        top-[600px] left-[-130px]"></div>
+        <div
+        class=" spray3Decor
+        absolute
+        w-[250px] h-[250px]
+        blur-[70px] 
+        z-[1] 
+        rounded-[200px] 
+        top-[1000px] right-[-50px]
+        "
+        ></div>
     </div>
   )
 }
