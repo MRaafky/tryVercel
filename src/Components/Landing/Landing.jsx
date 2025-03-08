@@ -10,7 +10,8 @@ function Landing() {
       w-full h-auto 
       flex flex-col 
       items-center 
-      z-[1]  "
+      z-[1] 
+      relative"
     >
       <h1
         class="HelveticaBold 

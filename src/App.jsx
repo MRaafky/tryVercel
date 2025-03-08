@@ -7,7 +7,7 @@ import './App.css'
 function App() {
 
   return (
-    <div className='contaunerAll'>
+    <div class="bg-[black]">
       <Landing></Landing>
       {/* <Decor></Decor> */}
       <Halaman1></Halaman1>
