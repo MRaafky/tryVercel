@@ -10,225 +10,99 @@ function Halaman2() {
   return (
     <div
       id="program"
-      class="
+      className="
       w-full 
-      bg-[black]
-      z-[1]
+      bg-black
+      z-1
       flex
       flex-col
       justify-center
       items-center
-      pt-32
+      pt-[128px]
       "
     >
       <h2
-        className="
-      judulHalaman2 
-      text-[4rem] 
-      text-[white] 
-      mt-0 
-      pb-16
-      font-family: HelveticaBold
-      sm:text-[2rem] 
-      "
+        class="
+        text-[25px] 
+        text-white 
+        mt-0 
+        pb-[64px]
+        "
       >
         Our Program
       </h2>
       <section
         className="
-      ContainerisiHalaman2
-      flex
-      flex-row 
-      items-center 
-      justify-center 
-      flex-wrap 
-      gap-[10%] 
-      w-[100rem]
-      sm:w-full 
-      sm:gap-[6%]
-
-      "
+        flex
+        flex-row 
+        items-center 
+        justify-center 
+        flex-wrap 
+        gap-[35px] 
+        w-full
+        "
       >
-        <div
-          className="
-        isiHalaman2
-        text-[2rem] 
-        flex 
-        flex-row 
-        justify-center 
-        items-center 
-        w-[28rem] 
-        h-52 
-        gap-12 
-        border-[linear-gradient(#000_20%,purple,white)] 
-        m-[1.5%] 
-        border-[0.1rem] 
-        border-solid
-        sm:w-28 
-        sm:flex-col-reverse 
-        sm:gap-[5%]"
-        >
-          <img
+        {programs.map((program, index) => (
+          <div
+            key={index}
             className="
-          imgHal2
-          w-32
-          sm:w-24"
-            src={CreativeMedia}
-          ></img>
-          <h3
-            className="
-          w-32 
-          text-[2rem] 
-          text-[white]
-          sm:text-[1.2rem] 
-          sm:pl-[16%]"
+            text-[16px]
+            flex 
+            justify-center 
+            items-center 
+            w-[112px] 
+            h-[125px] 
+            gap-[10px] 
+            m-[15px] 
+            flex-col-reverse 
+            md:flex-row 
+            "
           >
-            Creative Media
-          </h3>
-        </div>
-        <div
-          className="
-        isiHalaman2
-        text-[2rem] 
-        flex 
-        flex-row 
-        justify-center 
-        items-center 
-        w-[28rem] 
-        h-52 
-        gap-12 
-        border-[linear-gradient(#000_20%,purple,white)] 
-        m-[1.5%] 
-        border-[0.1rem] 
-        border-solid
-        sm:w-28 
-        sm:flex-col-reverse 
-        sm:gap-[5%]"
-        >
-          <img
-            className="
-          imgHal2
-          w-32
-          sm:w-24"
-            src={Movement}
-          ></img>
-          <h3
-            className="
-          w-32 
-          text-[2rem] 
-          text-[white]
-          sm:text-[1.2rem] 
-          sm:pl-[16%]"
-          >
-            Movement
-          </h3>
-        </div>
-        <div
-          className="
-        isiHalaman2
-        text-[2rem] 
-        flex 
-        flex-row 
-        justify-center 
-        items-center 
-        w-[28rem] 
-        h-52 
-        gap-12 
-        border-[linear-gradient(#000_20%,purple,white)] 
-        m-[1.5%] 
-        border-[0.1rem] 
-        border-solid
-        sm:w-28 
-        sm:flex-col-reverse 
-        sm:gap-[5%]"
-        >
-          <img
-            className="
-          imgHal2
-          w-32
-          sm:w-24"
-            src={SharingSession}
-          ></img>
-          <h3
-            className="
-          w-32 
-          text-[2rem] 
-          text-[white]
-          sm:text-[1.2rem] 
-          sm:pl-[16%]"
-          >
-            Sharing Session
-          </h3>
-        </div>
-        <div
-          className="
-        isiHalaman2
-        text-[2rem] 
-        flex 
-        flex-row 
-        justify-center 
-        items-center 
-        w-[28rem] 
-        h-52 
-        gap-12 
-        border-[linear-gradient(#000_20%,purple,white)] 
-        m-[1.5%] 
-        border-[0.1rem] 
-        border-solid
-        sm:w-28 
-        sm:flex-col-reverse 
-        sm:gap-[5%]"
-        >
-          <img
-            className="
-          imgHal2
-          w-32
-          sm:w-24"
-            src={SocialEducation}
-          ></img>
-          <h3 className="
-          w-32 
-          text-[2rem] 
-          text-[white]
-          sm:text-[1.2rem] 
-          sm:pl-[16%]">Social Education</h3>
-        </div>
-        <div
-          className="
-        isiHalaman2
-        text-[2rem] 
-        flex 
-        flex-row 
-        justify-center 
-        items-center 
-        w-[28rem] 
-        h-52 
-        gap-12 
-        border-[linear-gradient(#000_20%,purple,white)] 
-        m-[1.5%] 
-        border-[0.1rem] 
-        border-solid
-        sm:w-28 
-        sm:flex-col-reverse 
-        sm:gap-[5%]"
-        >
-          <img
-            className="
-          imgHal2
-          w-32
-          sm:w-24"
-            src={ShortCourse}
-          ></img>
-          <h3 className="
-          w-32 
-          text-[2rem] 
-          text-[white]
-          sm:text-[1.2rem] 
-          sm:pl-[16%]">Short Course</h3>
-        </div>
+            <img
+              className="
+              w-[60px]
+              "
+              src={program.image}
+              alt={program.title}
+            />
+            <h3
+              className="
+              w-[60px] 
+              text-[12px] 
+              text-white
+              text-center
+              "
+            >
+              {program.title}
+            </h3>
+          </div>
+        ))}
       </section>
     </div>
   );
 }
+
+const programs = [
+  {
+    title: "Creative Media",
+    image: CreativeMedia,
+  },
+  {
+    title: "Movement",
+    image: Movement,
+  },
+  {
+    title: "Sharing Session",
+    image: SharingSession,
+  },
+  {
+    title: "Social Education",
+    image: SocialEducation,
+  },
+  {
+    title: "Short Course",
+    image: ShortCourse,
+  },
+];
 
 export default Halaman2;
