@@ -36,7 +36,7 @@ function Landing() {
       hover:bg-[white] 
       hover:transition-[0.5s]
       hover: border-[white]
-      // active atau focus untuk efek hover mobile 
+      // active atau focus untuk efek hover mobile
       active:text-[black] 
       active:bg-[white] 
       active:transition-[0.5s]
