@@ -1,0 +1,11 @@
+.newsActive {
+    background-color: white;
+    color: black;
+    
+}
+
+.news:hover {
+    height: 180px;
+    background-color: white;
+    color: black;
+}

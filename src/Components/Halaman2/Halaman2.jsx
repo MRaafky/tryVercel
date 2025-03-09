@@ -23,6 +23,7 @@ function Halaman2() {
     >
       <h2
         class="
+        HelveticaBold
         text-[25px] 
         text-white 
         mt-0 
@@ -33,12 +34,13 @@ function Halaman2() {
       </h2>
       <section
         className="
+        Helvetica
         flex
         flex-row 
         items-center 
         justify-center 
         flex-wrap 
-        gap-[35px] 
+        gap-[20px] 
         w-full
         "
       >
