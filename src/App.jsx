@@ -6,6 +6,7 @@ import Halaman1 from "./Components/Halaman1/Halaman1";
 import Halaman2 from "./Components/Halaman2/Halaman2";
 import Halaman3 from "./Components/Halaman3/Halaman3";
 import Halaman4 from "./Components/Halaman4/Halaman4";
+import Halaman5 from "./Components/Halaman5/Halaman5"
 import "./App.css";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Halaman2></Halaman2>
       <Halaman3></Halaman3>
       <Halaman4></Halaman4>
+      <Halaman5></Halaman5>
     </div>
   );
 }
