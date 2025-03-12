@@ -5,12 +5,12 @@ import "../font.css";
 function Landing() {
   return (
     <div
-      class=" bg-[black] 
+      class=" bg-[none] 
       text-[white] 
       w-full h-auto 
       flex flex-col 
       items-center 
-      z-[1] 
+      z-[2] 
       relative"
     >
       <h1
@@ -25,7 +25,9 @@ function Landing() {
       mt-[4px]">
         Greeting Quality Students
       </p>
-      <button class="Helvetica
+      <button class="
+      btnLanding
+      Helvetica
       w-[250px] h-[40px]
       text-[12px]
       mt-[250px]
@@ -41,8 +43,7 @@ function Landing() {
       active:bg-[white] 
       active:transition-[0.5s]
       active: border-[white] 
-      border-[1px] border-solid border-[white] border rounded-[10px]
-      z-[2]  
+      border-[1px] border-solid border-[white] border rounded-[10px]  
       ">
         Explore Our Journey
       </button>

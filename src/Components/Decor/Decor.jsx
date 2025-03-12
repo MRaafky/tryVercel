@@ -9,7 +9,7 @@ function Decor() {
     <div class="absolute 
     w-full h-[200%] 
     overflow-hidden 
-    z-[2] 
+    z-[1] 
     left-0 top-0">
         <img  class="relative 
         w-[60px] 
@@ -25,7 +25,7 @@ function Decor() {
         blur-[90px] 
         left-[290px]
         rounded-[50px] "></div>
-        <WaveAnimation></WaveAnimation>
+        <WaveAnimation class="wavecontainer"></WaveAnimation>
         <div class="spray2Decor 
         absolute  
         w-[200px] h-[300px]

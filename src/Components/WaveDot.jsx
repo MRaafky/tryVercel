@@ -189,8 +189,8 @@ const WaveAnimation = () => {
   }, [config, animate, createDot]);
 
   return (
-    <div className="relative w-full h-screen bg-[none] overflow-hidden">
-      <div ref={waveContainerRef} className="wave-container absolute inset-0 top-[50px]" />
+    <div className="relative w-full h-screen bg-[none] overflow-hidden z-[0]">
+      <div ref={waveContainerRef} className="wave-container absolute inset-0 top-[0px] z-[0]" />
     </div>
   );
 };

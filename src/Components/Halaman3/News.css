@@ -8,4 +8,19 @@
     height: 180px;
     background-color: white;
     color: black;
+    transition: 0.5s;
+}
+
+.news {
+    transition: 0.5s;
+}
+
+.btnNews {
+    transition: 0.3s;
+}
+
+.btnNews:hover {
+    transition: 0.3s;
+    background-color: black;
+    color: white;
 }

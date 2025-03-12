@@ -91,6 +91,10 @@ function Halaman4() {
                     border-[2px] border-white
                     rounded-[5px]
                     text-[10px]
+                    hover:bg-[white]
+                    hover:text-[black]
+                    transition-all
+                    duration-[0.3s]
                     ">
                         More Info
                     </button>
@@ -99,6 +103,10 @@ function Halaman4() {
                     border-[2px] border-white
                     rounded-[5px]
                     text-[10px]
+                    hover:bg-[white]
+                    hover:text-[black]
+                    transition-all
+                    duration-[0.3s]
                     ">
                         Buy Now
                     </button>
