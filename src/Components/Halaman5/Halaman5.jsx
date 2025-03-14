@@ -21,7 +21,13 @@ function Halaman5() {
         mt-[100px]
         "
         >Past Events</h2>
-        <div>
+        <div
+        class="
+        w-[90%]
+        flex flex-row
+        overflow-hidden 
+        "
+        >
           {cards.map((card) => (
             <div
               key={card.id}
