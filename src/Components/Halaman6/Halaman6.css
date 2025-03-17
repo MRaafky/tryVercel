@@ -1,0 +1,28 @@
+.imgContainerHal6 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.imgHal6 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+
+.containerFilterImg {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.filterImg {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.containerFilterImg section {
+    grid-area: 1 / 1 / 2 / 2;
+}
