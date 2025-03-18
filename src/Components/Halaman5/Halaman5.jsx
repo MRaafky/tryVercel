@@ -8,8 +8,10 @@ function Halaman5() {
 
   const [hoveredCardId, setHoveredCardId] = useState(null);
   return (
-    <div
+    <div class="bgHal5">
+      <div
     class="
+    containerHal5
     flex flex-col
     items-center
     "
@@ -89,6 +91,7 @@ function Halaman5() {
             </div>
              ))}
         </div>
+    </div>
     </div>
   )
 }

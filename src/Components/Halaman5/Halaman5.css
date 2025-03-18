@@ -4,6 +4,15 @@
     --quantity: 5;
 }
 
+.bgHal5 {
+    background: linear-gradient(#000000 50%,#9b9b9b 10%);
+}
+
+.containerHal5 {
+    background: none;
+    backdrop-filter: blur(100px);
+}
+
 .card-image {
     grid-area: 1 / 1 / 2 / 2;
 }

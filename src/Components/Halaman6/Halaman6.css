@@ -1,3 +1,7 @@
+.containerHal6 {
+    background: linear-gradient(#9b9b9b 70%, #000000 10%);
+}
+
 .imgContainerHal6 {
     display: grid;
     grid-template-columns: 1fr;

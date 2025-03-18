@@ -8,6 +8,7 @@ import "./Halaman6.css"
 function Halaman6() {
   return (
     <div class="
+    containerHal6
     text-[white]
     flex flex-col
     items-center
