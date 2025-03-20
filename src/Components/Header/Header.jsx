@@ -43,7 +43,7 @@ function Header() {
          class="
          onHamburger
         text-[white]
-        w-[43px]
+        w-[38px]
         relative
         top-[-7px]
         " />

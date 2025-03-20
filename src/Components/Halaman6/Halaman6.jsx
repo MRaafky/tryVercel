@@ -9,13 +9,11 @@ import "./Halaman6.css"
 function Halaman6() {
   return (
     <div class="
-    bgHal6
-    ">
-        <div class="
     containerHal6
     text-[white]
     flex flex-col
     items-center
+    mt-[60px]
     ">
         <h2
         class="
@@ -35,26 +33,70 @@ function Halaman6() {
         class="
         imgContainerHal6
         w-auto
-        mt-[100px]
+        mt-[30px]
         overflow-hidden
         "
         >
             <img src={anggotabaru}
             class="
             imgHal6
-            w-[900px] max-w-none
+            w-[700px] max-w-none
             relative
-            top-[0] left-[-20%]
+            top-[0] left-[-15%]
+            overflow-hidden
             "
             ></img>
             <img src={anggotabaru}
             class="
             imgHal6
-            w-[800px] max-w-none
+            w-[600px] max-w-none
             relative
-            top-[50px] left-[25%]
+            top-[70px] left-[20%]
+            overflow-hidden
             "
             ></img>
+        </div>
+        <div class="
+        containerBlob
+        w-min h-min
+        bg-[white]
+        top-[400px]
+        left-[10px]
+        absolute
+        flex flex-nowrap
+        ">
+            <div class="
+            blob
+            blob1
+            w-[100px] h-[100px]
+            bg-[#b22e15]
+            blur-[20px]
+            rounded-[50%]
+            opacity-[0.8]
+            absolute
+            top-[20px]
+            "></div>
+            <div class="
+            blob
+            blob2
+            w-[100px] h-[100px]
+            bg-[#e0c39f]
+            blur-[20px]
+            rounded-[50%]
+            opacity-[0.8]
+            absolute
+            "></div>
+            <div class="
+            blob
+            blob3
+            w-[100px] h-[100px]
+            bg-[#d67e45]
+            blur-[20px]
+            rounded-[50%]
+            opacity-[0.8]
+            absolute
+            top-[-20px]
+            "></div>
         </div>
        <div class="
        containerFilterImg
@@ -130,7 +172,6 @@ function Halaman6() {
             </div>
         </section>
        </div>
-    </div>
     </div>
   )
 }

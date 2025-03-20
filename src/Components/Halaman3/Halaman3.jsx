@@ -58,6 +58,7 @@ function Halaman3() {
       text-[white]
       justify-center
       items-center
+      z-[2]
       "
     >
       <h2 class="

@@ -7,7 +7,7 @@ import "./Decor.css"
 function Decor() {
   return (
     <div class="absolute 
-    w-full h-[200%] 
+    w-full h-[200%]
     overflow-hidden 
     z-[1] 
     left-0 top-0">

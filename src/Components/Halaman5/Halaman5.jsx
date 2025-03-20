@@ -31,7 +31,8 @@ function Halaman5() {
         flex flex-row
         overflow-hidden
         relative
-        justify-center items-center 
+        justify-center items-center
+        mt-[30px] 
         "
         >
           {cards.map((card) => (
