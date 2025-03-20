@@ -5,7 +5,8 @@
 }
 
 .bgHal5 {
-    background: linear-gradient(#000000 50%,#9b9b9b 10%);
+    /* background: linear-gradient(#000000 50%,#9b9b9b 10%, #ffffff 40%); */
+    background-color: black;
 }
 
 .containerHal5 {

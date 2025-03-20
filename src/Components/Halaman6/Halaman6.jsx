@@ -1,5 +1,6 @@
 import React from 'react'
 import anggota from "../../assets/anggota.png"
+import anggotabaru from "../../assets/anggotabaru.png"
 import Terai from "../../assets/LogoTerai.png"
 import Hubungins from "../../assets/LogoHubung'ins.png"
 import Perspektif from "../../assets/LogoPerspektif.png"
@@ -8,6 +9,9 @@ import "./Halaman6.css"
 function Halaman6() {
   return (
     <div class="
+    bgHal6
+    ">
+        <div class="
     containerHal6
     text-[white]
     flex flex-col
@@ -17,14 +21,16 @@ function Halaman6() {
         class="
         HelveticaBold
         text-[30px]
+        text-[white]
         "
         >Let's Connect</h2>
         <h2
         class="
         HelveticaBold
         text-[25px]
+        text-[white]
         "
-        >With Us</h2>
+        >with Us</h2>
         <div
         class="
         imgContainerHal6
@@ -33,7 +39,7 @@ function Halaman6() {
         overflow-hidden
         "
         >
-            <img src={anggota}
+            <img src={anggotabaru}
             class="
             imgHal6
             w-[900px] max-w-none
@@ -41,7 +47,7 @@ function Halaman6() {
             top-[0] left-[-20%]
             "
             ></img>
-            <img src={anggota}
+            <img src={anggotabaru}
             class="
             imgHal6
             w-[800px] max-w-none
@@ -124,6 +130,7 @@ function Halaman6() {
             </div>
         </section>
        </div>
+    </div>
     </div>
   )
 }

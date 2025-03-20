@@ -1,5 +1,10 @@
+.bgHal6 {
+    /* background: linear-gradient(#ffffff 30%, #9b9b9b 50%, #000000 20%); */
+    background-color: black;
+}
+
 .containerHal6 {
-    background: linear-gradient(#9b9b9b 70%, #000000 10%);
+    backdrop-filter: blur(100px);
 }
 
 .imgContainerHal6 {
