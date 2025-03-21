@@ -43,16 +43,16 @@ function Halaman6() {
             imgHal6
             w-[700px] max-w-none
             relative
-            top-[-10%] left-[-15%]
+            top-[-20%] left-[-40%]
             overflow-hidden
             "
             ></img>
             <img src={anggotabaru}
             class="
             imgHal6
-            w-[600px] max-w-none
+            w-[700px] max-w-none
             relative
-            top-[70px] left-[-7%]
+            top-[15px] left-[-7%]
             overflow-hidden
             "
             ></img>
@@ -61,7 +61,7 @@ function Halaman6() {
         containerBlob
         w-min h-min
         bg-[white]
-        top-[400px]
+        top-[380px]
         left-[10px]
         absolute
         flex flex-nowrap
