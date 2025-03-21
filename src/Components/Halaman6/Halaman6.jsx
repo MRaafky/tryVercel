@@ -14,6 +14,7 @@ function Halaman6() {
     flex flex-col
     items-center
     mt-[60px]
+    overflow-hidden
     ">
         <h2
         class="
@@ -32,7 +33,7 @@ function Halaman6() {
         <div
         class="
         imgContainerHal6
-        w-auto
+        w-full
         mt-[30px]
         overflow-hidden
         "
@@ -42,7 +43,7 @@ function Halaman6() {
             imgHal6
             w-[700px] max-w-none
             relative
-            top-[0] left-[-15%]
+            top-[-10%] left-[-15%]
             overflow-hidden
             "
             ></img>
@@ -51,7 +52,7 @@ function Halaman6() {
             imgHal6
             w-[600px] max-w-none
             relative
-            top-[70px] left-[20%]
+            top-[70px] left-[-7%]
             overflow-hidden
             "
             ></img>
@@ -98,25 +99,24 @@ function Halaman6() {
             top-[-20px]
             "></div>
         </div>
+        <div
+        class="
+        filterImg
+        w-[500px]
+        h-[100px]
+        bg-[black]
+        blur-[20px]
+        z-1
+        absolute
+        top-[460px]
+        left-[-10%]
+        "
+        ></div>
        <div class="
        containerFilterImg
        w-screen
        h-fit
        ">
-        <div
-        class="
-        filterImg
-        w-[1000px]
-        h-[100px]
-        bg-[black]
-        blur-[20px]
-        z-1
-        relative
-        top-[-30%]
-        left-[-10%]
-        overflow-hidden
-        "
-        ></div>
         <section
         class="
         w-screen
