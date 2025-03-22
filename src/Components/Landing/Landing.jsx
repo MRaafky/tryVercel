@@ -16,13 +16,26 @@ function Landing() {
       <h1
         class="HelveticaBold 
         text-[40px] 
-        mt-[250px]"
+        mt-[250px]
+        
+        md:text-[60px]
+        md:mt-[230px]
+
+        lg:text-[100px]
+        "
       >
         Unteyo Journey
       </h1>
       <p class="Helvetica 
       text-[18px] 
-      mt-[4px]">
+      mt-[4px]
+      
+      md:text-[24px]
+      md:mt-[2px]
+      
+      lg:text-[26px]
+      lg:mt-[0px]
+      ">
         Greeting Quality Students
       </p>
       <button class="
@@ -43,13 +56,23 @@ function Landing() {
       active:bg-[white] 
       active:transition-[0.5s]
       active: border-[white] 
-      border-[1px] border-solid border-[white] border rounded-[10px]  
+      border-[1px] border-solid border-[white] border rounded-[10px]
+      
+      md:w-[350px] md:h-[50px] md:text-[15px]
+      md:mt-[180px]
+
+      lg:w-[500px] lg:h-[60px]
+      lg:text-[17px] lg:rounded-[15px]
       ">
         Explore Our Journey
       </button>
       <p class="Helvetica 
       text-[15px] 
-      mt-[9px]">#BeWise</p>
+      mt-[9px]
+      
+      lg:text-[15px]
+      lg:mt-[30px]
+      ">#BeWise</p>
     </div>
   );
 }

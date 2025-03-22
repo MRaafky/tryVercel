@@ -36,6 +36,13 @@ function Header() {
     bg-none
     fixed top-[0]
     z-3
+
+    md:h-[120px]
+
+    lg:flex-row-reverse
+    lg:h-[120px]
+    lg:pt-[10px]
+    lg:pl-[200px] lg:pr-[130px]
     `}
     >
          <FontAwesomeIcon icon={faBars} 
@@ -46,17 +53,45 @@ function Header() {
         w-[38px]
         relative
         top-[-7px]
+
+        md:w-[48px]
+        md:flex
+        md:top-[-10px]
+
+        lg:hidden
         " />
+        <ul
+        class="
+        lgHeader
+        hidden
+        Helvetica
+        text-[white]
+        transition-[0.1s]
+        cursor-[pointer]
+
+        lg:flex lg:flex-row
+        lg:gap-[100px]
+        lg:p-[30px]
+        lg:text-[18px]
+        "
+        >
+            <li>About Us</li>
+            <li>Program</li>
+            <li>News</li>
+            <li>Contact Us</li>
+        </ul>
         <img src={logo}
         class="
         w-[92.48px] h-[100px]
         relative
         top-[-10px]
+
+        md:w-[110.976px] md:h-[120px]
         "></img>
         <div 
         className={`Navbar ${isActive ? 'active' : ''} absolute
         top-[0px] left-[0px]
-        flex flex-col`}>
+        flex flex-col lg:hidden`}>
             <ul class="
             HelveticaBold
             text-[black] text-[18px]

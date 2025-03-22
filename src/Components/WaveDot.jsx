@@ -18,15 +18,15 @@ const WaveAnimation = () => {
   const config = useMemo(
     () => ({
       lines: isMobile ? 3 : 5, // Reduced lines for mobile
-      dotsPerLine: isMobile ? 25 : 40, // Reduced dots per line for mobile
-      dotSize: isMobile ? 2 : 2.5,
+      dotsPerLine: isMobile ? 25 : 35, // Reduced dots per line for mobile
+      dotSize: isMobile ? 2 : 2,
       baseSpeed: 0.5,
-      waveSpeed: isMobile ? 0.001 : 0.002,
+      waveSpeed: isMobile ? 0.001 : 0.001,
       amplitudeRange: isMobile ? [50, 100] : [50, 120], // Adjusted amplitude for mobile
-      spacing: isMobile ? 30 : 30,
+      spacing: isMobile ? 30 : 35,
       referenceWidth: 1920,
       maxFPS: 60,
-      touchRadius: isMobile ? 60 : 100,
+      touchRadius: isMobile ? 60 :90,
       minOpacity: 0.4,
       maxOpacity: 1,
     }),

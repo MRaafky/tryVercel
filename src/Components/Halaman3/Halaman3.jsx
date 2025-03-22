@@ -65,6 +65,8 @@ function Halaman3() {
       HelveticaBold
       text-[25px]
       mt-[100px]
+
+      lg:text-[40px]
       ">
         Popular News
       </h2>
@@ -73,10 +75,14 @@ function Halaman3() {
         w-full
         flex flex-col
         justify-center items-center
+
+        lg:flex-row
                 "
       >
         <div class="
         w-[200px] h-[400px]
+
+        lg:w-full lg;h-full
         ">
           <img
             ref={imgRef}

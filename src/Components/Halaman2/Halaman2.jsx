@@ -19,6 +19,8 @@ function Halaman2() {
       justify-center
       items-center
       pt-[128px]
+
+      lg:pt-[50px]
       "
     >
       <h2
@@ -28,6 +30,8 @@ function Halaman2() {
         text-white 
         mt-0 
         pb-[64px]
+
+        lg:text-[40px]
         "
       >
         Our Program
@@ -42,6 +46,11 @@ function Halaman2() {
         flex-wrap 
         gap-[20px] 
         w-full
+        
+        lg:justify-around
+        lg:p-[50px] lg:gap-[50px]
+        lg:mt-[-50px]
+        lg:w-[1100px] lg:h-[500px]
         "
       >
         {programs.map((program, index) => (
@@ -57,22 +66,29 @@ function Halaman2() {
             gap-[10px] 
             m-[15px] 
             flex-col-reverse 
-            md:flex-row 
+            md:flex-row
+            
+            lg:w-[25%]
             "
           >
             <img
               className="
               w-[60px]
+
+              lg:w-[100px]
               "
               src={program.image}
               alt={program.title}
             />
             <h3
               className="
+              HelveticaBold
               w-[60px] 
               text-[12px] 
               text-white
               text-center
+
+              lg:text-[18px]
               "
             >
               {program.title}

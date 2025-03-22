@@ -25,7 +25,7 @@ function App() {
       <Halaman5></Halaman5>
       <Halaman6></Halaman6>
       <Footer></Footer>
-      <InstagramPost></InstagramPost>
+      {/* <InstagramPost></InstagramPost> */}
     </div>
   );
 }
