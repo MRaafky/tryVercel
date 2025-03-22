@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import logo from "../../assets/logo.png"
 import instagram from "../../assets/instagram.png"
 import tiktok from "../../assets/tiktok.png"
@@ -19,6 +19,7 @@ function Footer() {
             link : "skdnaksd"
         },
     ]
+    
 
   return (
     <footer
@@ -35,6 +36,18 @@ function Footer() {
         w-[100px]
         "
         ></img>
+        <p
+        class="
+        Helvetica
+        text-[white]
+        text-center
+        text-[15px]
+        p-[30px]
+        mt-[-40px]
+        "
+        >
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged
+        </p>
         <section
         class="
         flex flex-row
@@ -50,7 +63,7 @@ function Footer() {
                 >
                     <img src={contact.gambar}
                     class="
-                    w-[45px]
+                    w-[40px]
                     "
                     ></img>
                 </li>
@@ -63,7 +76,7 @@ function Footer() {
         bg-[#191c1f]
         flex flex-row
         list-none
-        Helvetica
+        HelveticaBold
         text-[15px]
         gap-[20px]
         items-center justify-center
@@ -75,15 +88,37 @@ function Footer() {
             <li>News</li>
             <li>Contact Us</li>
         </section>
+        <section
+        class="
+        w-full h-auto
+        flex flex-col
+        items-center justify-around
+        p-[5px]
+        bg-[#191c1f]
+        "
+        >
+        <ul
+        class="
+        list-none
+        text-[white] text-[10px]
+        flex flex-row
+        gap-[12px]
+        "
+        >
+            <li>Privcy and Policy</li>
+            <li>Terms and Condition</li>
+            <li>Cookie Policy</li>
+            <li>Recruitment Privacy</li>
+        </ul>
         <p
         class="
         Helvetica
-        text-white text-[10px]
-        bg-[#191c1f]
-        w-full h-[20px]
-        text-center
+        text-white text-[9px]
+        mt-[10px]
         "
-        >CopyRight@Unteyo Journey 2025</p>
+        >Copyright@Unteyo Journey 2025</p>
+        </section>
+        
     </footer>
   )
 }
