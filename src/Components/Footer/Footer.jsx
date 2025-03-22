@@ -29,6 +29,8 @@ function Footer() {
     mt-[70px]
     flex flex-col
     items-center
+
+    lg:mt-[30px]
     "
     >
         <img src={logo}

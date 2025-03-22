@@ -20,7 +20,7 @@ function App() {
       <Decor></Decor>
       <Halaman1></Halaman1>
       <Halaman2></Halaman2>
-      <Halaman3></Halaman3>
+      {/* <Halaman3></Halaman3> */}
       <Halaman4></Halaman4>
       <Halaman5></Halaman5>
       <Halaman6></Halaman6>

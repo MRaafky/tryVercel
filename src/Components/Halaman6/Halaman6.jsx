@@ -21,6 +21,8 @@ function Halaman6() {
         HelveticaBold
         text-[30px]
         text-[white]
+
+        lg:text-[50px]
         "
         >Let's Connect</h2>
         <h2
@@ -28,6 +30,8 @@ function Halaman6() {
         HelveticaBold
         text-[25px]
         text-[white]
+
+        lg:text-[40px]
         "
         >with Us</h2>
         <div
@@ -36,6 +40,8 @@ function Halaman6() {
         w-full
         mt-[30px]
         overflow-hidden
+
+        lg:h-[300px]
         "
         >
             <img src={anggotabaru}
@@ -45,6 +51,8 @@ function Halaman6() {
             relative
             top-[-20%] left-[-40%]
             overflow-hidden
+
+            lg:hidden
             "
             ></img>
             <img src={anggotabaru}
@@ -54,6 +62,10 @@ function Halaman6() {
             relative
             top-[15px] left-[-7%]
             overflow-hidden
+
+            lg:top-[0] lg:left-[0]
+            lg:w-full
+            lg:absolute
             "
             ></img>
         </div>
@@ -110,6 +122,10 @@ function Halaman6() {
         absolute
         top-[460px]
         left-[-10%]
+
+        lg:w-[3000px] lg:h-[300px]
+        lg:blur-[60px]
+        lg:top-[600px]
         "
         ></div>
        <div class="
@@ -122,10 +138,13 @@ function Halaman6() {
         w-screen
         flex flex-row
         gap-[30px]
-        items-start
+        items-center
         justify-center
         mt-[10px]
         z-2
+         
+        lg:mt-[250px]
+        lg:bg-[black]
         "
         >
             <div class="
@@ -135,11 +154,15 @@ function Halaman6() {
                 <h3 class="
                 HelveticaBold
                 text-[15px]
+
+                lg:text-[20px]
                 ">Supported By:</h3>
                 <div>
                     <img src={Hubungins}
                     class="
                     w-[75px]
+
+                    lg:w-[150px]
                     "
                     ></img>
                 </div>
@@ -151,6 +174,8 @@ function Halaman6() {
                 <h3 class="
                 HelveticaBold
                 text-[15px]
+
+                lg:text-[25px]
                 ">Partner Us:</h3>
                 <div
                 class="
@@ -161,11 +186,15 @@ function Halaman6() {
                     <img src={Terai}
                     class="
                     w-[75px]
+
+                    lg:w-[150px]
                     "
                     ></img>
                     <img src={Perspektif}
                     class="
                     w-[75px]
+
+                    lg:w-[150px]
                     "
                     ></img>
                 </div>

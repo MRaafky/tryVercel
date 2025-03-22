@@ -20,15 +20,27 @@ function Halaman4() {
         text-[white]
         text-[25px]
         mt-[100px]
+
+        lg:text-[40px]
         "
         >
             Upcoming Event
         </h2>
+        <div class="
+        w-full
+        flex flex-col
+        items-center justify-center
+
+        lg:flex-row-reverse
+        lg:gap-[100px]
+        ">
         <img src={GaleryofLife}
         class="
         w-[230px]
         rounded-[20px]
         mt-[50px]
+
+        lg:w-[320px]
         "
         ></img>
         <section
@@ -40,11 +52,17 @@ function Halaman4() {
         flex flex-row
         p-[10px]
         gap-[20px]
+
+        lg:w-[480px] 
+        lg:p-[20px]
+        lg:gap-[30px]
         "
         >
             <img src={logo2}
             class="
             w-[50px] h-[50px]
+
+            lg:w-[70px] lg:h-[70px]
             "
             ></img>
             <div
@@ -56,6 +74,8 @@ function Halaman4() {
                 class="
                 HelveticaBold
                 text-[18px]
+
+                lg:text-[24px]
                 "
                 >
                     Galery of Life: Ekspresi Dari Melukis
@@ -65,26 +85,42 @@ function Halaman4() {
                 flex flex-col
                 gap-[2px]
                 mt-[15px]
+
+                lg:mt-[25px]
+                lg:gap-[5px]
                 ">
                     <h4 class="
                     HelveticaBold
                     text-[16px]
+
+                    lg:text-[20px]
                     ">Date</h4>
                     <p class="
                     Helvetica
                     text-[14px]
+
+                    lg:text-[16px]
                     ">JAN 10 2025</p>
                     <h4 class="
                     HelveticaBold
-                    text-[16px]">Location</h4>
+                    text-[16px]
+                    
+                    lg:text-[20px]
+                    ">Location</h4>
                     <p class="
                     Helvetica
-                    text-[14px]">Taman Kampus 1 UTY</p>
+                    text-[14px]
+                    
+                    lg:text-[16px]
+                    ">Taman Kampus 1 UTY</p>
                 </div>
                 <div class="
                 flex flex-row
                 gap-[10px]
                 mt-[15px]
+
+                lg:mt-[25px]
+                lg:gap-[25px]
                 ">
                     <button class="
                     w-[100px]
@@ -95,6 +131,9 @@ function Halaman4() {
                     hover:text-[black]
                     transition-all
                     duration-[0.3s]
+
+                    lg:w-[130px] lg:h-[25px]
+                    lg:rounded-[8px]
                     ">
                         More Info
                     </button>
@@ -107,6 +146,9 @@ function Halaman4() {
                     hover:text-[black]
                     transition-all
                     duration-[0.3s]
+
+                     lg:w-[130px] lg:h-[25px]
+                    lg:rounded-[8px]
                     ">
                         Buy Now
                     </button>
@@ -115,11 +157,15 @@ function Halaman4() {
                 HelveticaBold
                 text-[15px]
                 mt-[15px]
+
+                lg:text-[20px]
+                lg:mt-[25px]
                 ">
                     "Ekspresikan Kreativitasmu di Gelary of Life"
                 </p>
             </div>
         </section>
+        </div>
     </div>
   )
 }

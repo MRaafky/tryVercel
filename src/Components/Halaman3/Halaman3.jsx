@@ -82,12 +82,12 @@ function Halaman3() {
         <div class="
         w-[200px] h-[400px]
 
-        lg:w-full lg;h-full
+        lg:w-[500px]
         ">
           <img
             ref={imgRef}
            class="
-            w-[200px]
+            w-[280px]
             mt-[50px]
             "
             alt="Berita Farhankun"

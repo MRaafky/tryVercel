@@ -22,6 +22,8 @@ function Halaman5() {
         text-[white]
         text-[25px]
         mt-[100px]
+
+        lg:text-[40px]
         "
         >Past Events</h2>
         <div
