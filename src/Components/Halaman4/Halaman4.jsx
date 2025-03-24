@@ -9,6 +9,7 @@ import GaleryofLife from "../../assets/Events/galeryoflife.png"
 function Halaman4() {
   return (
     <div
+    id="event"
     class="
     flex flex-col
     justify-center items-center

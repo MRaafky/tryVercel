@@ -13,14 +13,20 @@ import InstagramPost from "./Components/InstagramEmbed/InstagramPost";
 import "./App.css";
 
 function App() {
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div class="bg-[black]">
-      <Header></Header>
+      <Header scrollToSection={scrollToSection}></Header>
       <Landing></Landing>
       <Decor></Decor>
       <Halaman1></Halaman1>
       <Halaman2></Halaman2>
-      {/* <Halaman3></Halaman3> */}
+      <Halaman3></Halaman3>
       <Halaman4></Halaman4>
       <Halaman5></Halaman5>
       <Halaman6></Halaman6>

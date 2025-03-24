@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import "./Header.css"
 
-function Header() {
+function Header({scrollToSection}) {
     const [isActive, setIsActive] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
 
@@ -75,10 +75,11 @@ function Header() {
         lg:text-[18px]
         "
         >
-            <li>About Us</li>
-            <li>Program</li>
-            <li>News</li>
-            <li>Contact Us</li>
+            <li onClick={() => scrollToSection("aboutUs")}>About Us</li>
+            <li onClick={() => scrollToSection("program")}>Program</li>
+            <li onClick={() => scrollToSection("post")}>Post</li>
+            <li onClick={() => scrollToSection("event")}>Event</li>
+            <li onClick={() => scrollToSection("connect")}>Contact Us</li>
         </ul>
         <img src={logo}
         class="
@@ -101,10 +102,11 @@ function Header() {
             p-[25px]
             gap-[15px]
             ">
-                <li>About Us</li>
-                <li>Program</li>
-                <li>News</li>
-                <li>Contact Us</li>
+                <li onClick={() => scrollToSection("aboutUs")}>About Us</li>
+              <li onClick={() => scrollToSection("program")}>Program</li>
+              <li onClick={() => scrollToSection("post")}>Post</li>
+              <li onClick={() => scrollToSection("event")}>Event</li>
+              <li onClick={() => scrollToSection("connect")}>Contact Us</li>
             </ul>
             <div class="
             w-screen h-[100px]

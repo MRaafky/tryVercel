@@ -11,6 +11,7 @@
 
 .containerHal5 {
     background: none;
+    overflow: hidden;
     backdrop-filter: blur(100px);
 }
 
@@ -22,13 +23,43 @@
     grid-area: 1 / 1 / 2 / 2;
 }
 
-.card-container {
-    transition: all 0.5s ease-in-out infinite;
-    overflow-x: scroll;
+.card-container-wrapper {
+    overflow-x: auto;
     scroll-behavior: smooth;
-}
-
-.card-container:hover .card {
-    animation-play-state: paused !important;
+    position: relative;
     transition: 0.5s;
 }
+
+/* .card-container {
+    transition: all 0.5s ease-in-out infinite;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+} */
+
+
+.blur-container {
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  /* Pseudo-elemen untuk efek blur di sisi kiri */
+  .blur-container::before,
+  .blur-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px; /* Sesuaikan sesuai kebutuhan */
+    pointer-events: none; /* Agar overlay tidak menghambat interaksi scroll */
+    z-index: 10;
+  }
+  
+  .blur-container::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(0,0,0,1), transparent);
+  }
+  
+  .blur-container::after {
+    left: 95%;
+    background: linear-gradient(to left, rgba(0,0,0,1) 40%, transparent);
+  }

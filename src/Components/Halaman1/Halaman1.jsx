@@ -4,7 +4,9 @@ import Laptop from "../../assets/laptopHal1.png"
 
 function Halaman1() {
   return (
-    <div class="bg-[black]
+    <div
+    id="aboutUs"
+    class="bg-[black]
     w-full h-full
     flex justify-center items-center flex-col
     relative
@@ -16,7 +18,7 @@ function Halaman1() {
         mt-[100px]
         bg-[black]
         flex flex-col item-start
-        p-[40px]
+        p-[35px]
         gap-[10px]
 
         lg:pr-[100px]

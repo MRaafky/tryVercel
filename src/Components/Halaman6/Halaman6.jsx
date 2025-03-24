@@ -8,7 +8,9 @@ import "./Halaman6.css"
 
 function Halaman6() {
   return (
-    <div class="
+    <div 
+    id="connect"
+    class="
     containerHal6
     text-[white]
     flex flex-col

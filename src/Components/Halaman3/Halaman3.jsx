@@ -1,8 +1,8 @@
 import React, {useEffect, useState, useRef} from 'react'
-import News1 from "../../assets/News/News1.jpg";
-import News2 from "../../assets/News/News2.jpg";
-import News3 from "../../assets/News/News3.jpg";
-import { generateSequentialNumber } from './NewCount';
+import Post1 from "../../assets/Post/Post1.png";
+import Post2 from "../../assets/Post/Post2.png";
+import Post3 from "../../assets/Post/Post3.png";
+import Post4 from "../../assets/Post/Post4.png";
 import "./News.css"
 
 function Halaman3() {
@@ -10,34 +10,41 @@ function Halaman3() {
   const [isHovered, setIsHovered] = useState(false);
   const imgRef = useRef(null);
 
-  const newsItems = [
+  const PostItems = [
     {
       id: 1,
-      title: "Speecless! Pria Bagikan Kisah Cintanya Saat di Bangku SMA",
-      isi: "Kisah inspiratif tentang pengalaman hidup yang mengajarkan banyak hal. Setiap kejadian memiliki makna yang mendalam.",
-      image: News1,
-      link: "bla",
+      title: "Malam Batal Berujung Tragis: Mahasiswa S2 Bayar Orang untuk Menyiram Air Keras Ke Mantan Karena Motif Sakit Hati",
+      isi: "Seorang mahasiswi berinisial N menjadi korban penyiraman air keras pada malam Natal, Selasa (24/12/2024), di Yogyakarta. Kasat Reskrim Polresta Yogyakarta, Kompol Probo Satrio, mengonfirmasi bahwa pelaku utama, B alias Billy, mantan pacar korban, ditangkap kurang dari 24 jam setelah kejadian. Motifnya adalah sakit hati karena hubungan mereka putus pada Agustus 2024.",
+      image: Post1,
+      link: "https://www.tiktok.com/@unteyo.journey/video/7453059194955123989?is_from_webapp=1&sender_device=pc&web_id=7426602204365211154",
     },
     {
       id: 2,
-      title: "Cerita Inspiratif: Perjalanan Menuju Sukses",
-      isi: "Kisah inspiratif tentang pengalaman hidup yang mengajarkan banyak hal. Setiap kejadian memiliki makna yang mendalam.",
-      image: News2,
-      link: "bla",
+      title: "Kelalaian Fatal! Siswa 1 Mempawah Gagal Ikut SNBP Akibat Kesalahan Sekolah",
+      isi: "Pada hari Senin, 3 Februari 2025, ratusan siswa SMAN 1 Menpawah menyerbu sekolah mereka sendiri sebagai bentuk protes. Para Siswa kecewa gagal daftar kuliah tanpa tes ataupun program Eligible Seleksi Nasional Berdasarkan Prestasi (SNBP) Tahun Ajaran 2024/2025 disebabkan kelalaian sekolah. Situasi meningkat ketika Wakil Direktur Kurikulum meninggalkan ruangan di bawah pengawalan polisi yang ketat.",
+      image: Post2,
+      link: "https://www.instagram.com/reel/DFsEsjBBGRV/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
     },
     {
       id: 3,
-      title: "Menakjubkan! Perubahan Hidup dalam 30 Hari",
-      isi: "Kisah inspiratif tentang pengalaman hidup yang mengajarkan banyak hal. Setiap kejadian memiliki makna yang mendalam.",
-      image: News3,
-      link: "bla",
+      title: "Kasus Dua Mahasiswa UBL, Berujung Minta Maaf",
+      isi: "Sedang heboh di media sosial, dua mahasiswi Universitas Bandar Lampung yang memberikan komentar negatif mengenai Kampus Darmajaya Lampung. Pasalnya dalam video yang tersebar, kedua mahasiswi tersebut tampak mengomentari satpam, kondisi lantai di kampus, juga kendaraan di parkiran dengan menyebutnya jelek.",
+      image: Post3,
+      link: "https://www.tiktok.com/@unteyo.journey/video/7441919579992902968?is_from_webapp=1&sender_device=pc&web_id=7426602204365211154",
+    },
+    {
+      id: 4,
+      title: "POV: Aku setelah ngeliat profil LinkedIn orang-orang seumuranku.",
+      isi: "Jadi termotivasi atau kena mental nih?",
+      image: Post4,
+      link: "https://www.instagram.com/reel/DFhIb0Fhw7L/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
     },
   ];
 
   useEffect(() => {
     if (!isHovered) {
       const interval = setInterval(() => {
-        setNumber((prev) => (prev % 3) + 1);
+        setNumber((prev) => (prev % 4) + 1);
       }, 1500);
       return () => clearInterval(interval);
     }
@@ -45,13 +52,13 @@ function Halaman3() {
 
   useEffect(() => {
     if (imgRef.current) {
-      imgRef.current.src = newsItems[number - 1].image;
+      imgRef.current.src = PostItems[number - 1].image;
     }
   }, [number]);
 
   return (
     <div
-      id="news"
+      id="post"
       class="
       w-screen
       flex flex-col
@@ -68,21 +75,25 @@ function Halaman3() {
 
       lg:text-[40px]
       ">
-        Popular News
+        Popular Post
       </h2>
       <section
         class="
         w-full
         flex flex-col
-        justify-center items-center
+        justify-start items-center
 
+        z-[2]
+        lg:justify-center lg:items-start
         lg:flex-row
+        lg:gap-[80px]
+        lg:mt-[50px]
                 "
       >
         <div class="
-        w-[200px] h-[400px]
+        w-auto h-[400px]
 
-        lg:w-[500px]
+        lg:w-auto
         ">
           <img
             ref={imgRef}
@@ -99,9 +110,12 @@ function Halaman3() {
           justify-center
           items-center
           gap-[10px]
+          mt-[200px]
+
+          lg:gap-[20px]
           "
         >
-          {newsItems.map((item) => (
+          {PostItems.map((item) => (
             <div
               key={item.id}
               className={`news ${number === item.id ? "newsActive" : ""} 
@@ -109,6 +123,8 @@ function Halaman3() {
               p-[20px]
               overflow-hidden
               rounded-[20px]
+
+              lg:h-[120px]
               `}
               onMouseEnter={() => {
                 setIsHovered(true);
@@ -120,6 +136,8 @@ function Halaman3() {
               class="
               HelveticaBold
               text-[14px]
+
+              lg:text-[16px]
               "
               >{item.title}</h3>
               <p
@@ -127,19 +145,30 @@ function Halaman3() {
               mt-[10px]
               Helvetica
               text-[12px]
+
+              lg:mt-[15px]
               "
               >{item.isi}</p>
+              <a href={item.link} target="_blank">
               <button
                 class="
+                btnNews
                 text-[10px]
                 w-[100px]
                 border border-black
                 rounded-[5px]
                 mt-[15px]
+                cursor-[pointer]
+                transition-[0.5s]
+
+                lg:mt-[18px]
+                lg:w-[150px] lg:h-[25px]
+                lg:text-[11px]
                 "
               >
                 Read More
               </button>
+              </a>
             </div>
           ))}
         </div>

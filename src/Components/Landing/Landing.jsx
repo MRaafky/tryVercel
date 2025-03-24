@@ -43,7 +43,7 @@ function Landing() {
       Helvetica
       w-[250px] h-[40px]
       text-[12px]
-      mt-[250px]
+      mt-[200px]
       bg-[black]
       text-[white] 
       transition-[0.5s] 
