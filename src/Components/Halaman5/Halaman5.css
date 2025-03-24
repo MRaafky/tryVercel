@@ -23,28 +23,12 @@
 }
 
 .card-container {
-    transition: 0.5s;
+    transition: all 0.5s ease-in-out infinite;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
 }
 
 .card-container:hover .card {
     animation-play-state: paused !important;
     transition: 0.5s;
 }
-
-.card {
-    animation-name: slideAnimation;
-    animation-duration: 20s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-delay: calc( (50s/ var(--quantity)) * (var(--position) - 1) );
-    transition: 0.5s;
-}
-
-@keyframes slideAnimation {
-    0% {
-      left: 100%;
-    }
-    100% {
-      left: calc(var(--width) * -1);
-    }
-  }
