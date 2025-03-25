@@ -1,210 +1,255 @@
-import React from 'react'
-import anggota from "../../assets/anggota.png"
-import anggotabaru from "../../assets/anggotabaru.png"
-import Terai from "../../assets/LogoTerai.png"
-import Hubungins from "../../assets/LogoHubung'ins.png"
-import Perspektif from "../../assets/LogoPerspektif.png"
-import "./Halaman6.css"
+
+import React from "react";
+import anggota from "../../assets/anggota.png";
+import anggotabaru from "../../assets/anggotabaru.png";
+import Terai from "../../assets/LogoTerai.png";
+import Hubungins from "../../assets/LogoHubung'ins.png";
+import Perspektif from "../../assets/LogoPerspektif.png";
+import "./Halaman6.css";
 
 function Halaman6() {
   return (
-    <div 
-    id="connect"
-    class="
+    <div
+      id="connect"
+      className="
     containerHal6
-    text-[white]
+    text-white
     flex flex-col
     items-center
-    mt-[60px]
+    mt-[30px]
     overflow-hidden
-    ">
-        <h2
-        class="
+    md:mt-[45px]
+    md:px-4
+    "
+    >
+      <h2
+        className="
         HelveticaBold
         text-[30px]
-        text-[white]
-
-        lg:text-[50px]
+        text-white
+        text-center
+        md:text-[40px]
         "
-        >Let's Connect</h2>
-        <h2
-        class="
+      >
+        Let's Connect
+      </h2>
+      <h2
+        className="
         HelveticaBold
         text-[25px]
-        text-[white]
-
-        lg:text-[40px]
+        text-white
+        text-center
+        md:text-[35px]
         "
-        >with Us</h2>
-        <div
-        class="
+      >
+        with Us
+      </h2>
+      <div
+        className="
         imgContainerHal6
         w-full
-        mt-[30px]
+        mt-[20px]
         overflow-hidden
-
-        lg:h-[300px]
+        md:h-[250px]
+        md:flex
+        md:justify-center
         "
-        >
-            <img src={anggotabaru}
-            class="
+      >
+        <img
+          src={anggotabaru}
+          className="
             imgHal6
-            w-[700px] max-w-none
+            w-[700px] 
+            max-w-none
             relative
-            top-[-20%] left-[-40%]
+            top-[-20%] 
+            left-[-40%]
             overflow-hidden
-
-            lg:hidden
+            md:static
+            md:w-full
+            md:max-w-[800px]
+            md:top-0
+            md:left-0
             "
-            ></img>
-            <img src={anggotabaru}
-            class="
-            imgHal6
-            w-[700px] max-w-none
-            relative
-            top-[15px] left-[-7%]
-            overflow-hidden
-
-            lg:top-[0] lg:left-[0]
-            lg:w-full
-            lg:absolute
-            "
-            ></img>
-        </div>
-        <div class="
+          alt="Anggota"
+        ></img>
+      </div>
+      <div
+        className="
         containerBlob
-        w-min h-min
-        bg-[white]
-        top-[380px]
+        w-min 
+        h-min
+        bg-white
+        top-[280px]
         left-[10px]
         absolute
-        flex flex-nowrap
-        ">
-            <div class="
+        flex 
+        flex-nowrap
+        md:top-[350px]
+        "
+      >
+        <div
+          className="
             blob
             blob1
-            w-[100px] h-[100px]
+            w-[80px] 
+            h-[80px]
             bg-[#b22e15]
             blur-[20px]
             rounded-[50%]
             opacity-[0.8]
             absolute
             top-[20px]
-            "></div>
-            <div class="
+            md:w-[100px]
+            md:h-[100px]
+            "
+        ></div>
+        <div
+          className="
             blob
             blob2
-            w-[100px] h-[100px]
+            w-[80px] 
+            h-[80px]
             bg-[#e0c39f]
             blur-[20px]
             rounded-[50%]
             opacity-[0.8]
             absolute
-            "></div>
-            <div class="
+            md:w-[100px]
+            md:h-[100px]
+            "
+        ></div>
+        <div
+          className="
             blob
             blob3
-            w-[100px] h-[100px]
+            w-[80px] 
+            h-[80px]
             bg-[#d67e45]
             blur-[20px]
             rounded-[50%]
             opacity-[0.8]
             absolute
             top-[-20px]
-            "></div>
-        </div>
-        <div
-        class="
+            md:w-[100px]
+            md:h-[100px]
+            "
+        ></div>
+      </div>
+      <div
+        className="
         filterImg
-        w-[500px]
-        h-[100px]
-        bg-[black]
+        w-[400px]
+        h-[80px]
+        bg-black
         blur-[20px]
         z-1
         absolute
-        top-[460px]
+        top-[360px]
         left-[-10%]
-
-        lg:w-[3000px] lg:h-[300px]
-        lg:blur-[60px]
-        lg:top-[600px]
+        md:w-[2000px] 
+        md:h-[200px]
+        md:blur-[40px]
+        md:top-[450px]
         "
-        ></div>
-       <div class="
+      ></div>
+      <div
+        className="
        containerFilterImg
        w-screen
        h-fit
-       ">
+       "
+      >
         <section
-        class="
+          className="
         w-screen
-        flex flex-row
-        gap-[30px]
+        flex 
+        flex-row
+        gap-[20px]
         items-center
         justify-center
-        mt-[10px]
+        mt-[50px]
         z-2
-         
-        lg:mt-[250px]
-        lg:bg-[black]
+        md:mt-[180px]
+        md:bg-black
+        md:py-4
         "
         >
-            <div class="
-            flex flex-col
+          <div
+            className="
+            flex 
+            flex-col
             items-center
-            ">
-                <h3 class="
+            "
+          >
+            <h3
+              className="
                 HelveticaBold
                 text-[15px]
-
-                lg:text-[20px]
-                ">Supported By:</h3>
-                <div>
-                    <img src={Hubungins}
-                    class="
-                    w-[75px]
-
-                    lg:w-[150px]
-                    "
-                    ></img>
-                </div>
-            </div>
-            <div class="
-            flex flex-col
-            items-center
-            ">
-                <h3 class="
-                HelveticaBold
-                text-[15px]
-
-                lg:text-[25px]
-                ">Partner Us:</h3>
-                <div
-                class="
-                flex flex-row
-                gap-[20px]
+                md:text-[18px]
+                text-white
                 "
-                >
-                    <img src={Terai}
-                    class="
-                    w-[75px]
-
-                    lg:w-[150px]
+            >
+              Supported By:
+            </h3>
+            <div>
+              <img
+                src={Hubungins}
+                className="
+                    w-[60px]
+                    md:w-[100px]
                     "
-                    ></img>
-                    <img src={Perspektif}
-                    class="
-                    w-[75px]
-
-                    lg:w-[150px]
-                    "
-                    ></img>
-                </div>
+                alt="Hubungins"
+              ></img>
             </div>
+          </div>
+          <div
+            className="
+            flex 
+            flex-col
+            items-center
+            "
+          >
+            <h3
+              className="
+                HelveticaBold
+                text-[15px]
+                md:text-[18px]
+                text-white
+                "
+            >
+              Partner Us:
+            </h3>
+            <div
+              className="
+                flex 
+                flex-row
+                gap-[15px]
+                md:gap-[30px]
+                "
+            >
+              <img
+                src={Terai}
+                className="
+                    w-[60px]
+                    md:w-[100px]
+                    "
+                alt="Terai"
+              ></img>
+              <img
+                src={Perspektif}
+                className="
+                    w-[60px]
+                    md:w-[100px]
+                    "
+                alt="Perspektif"
+              ></img>
+            </div>
+          </div>
         </section>
-       </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Halaman6
+export default Halaman6;

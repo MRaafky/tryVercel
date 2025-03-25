@@ -11,7 +11,7 @@ function Halaman2() {
     <div
       id="program"
       className="
-      w-full 
+      w-full
       bg-black
       z-1
       flex
@@ -19,18 +19,18 @@ function Halaman2() {
       justify-center
       items-center
       pt-[128px]
-
+      md:pt-[80px]
       lg:pt-[50px]
       "
     >
       <h2
-        class="
+        className="
         HelveticaBold
-        text-[25px] 
-        text-white 
-        mt-0 
+        text-[25px]
+        text-white
+        mt-0
         pb-[64px]
-
+        md:text-[35px]
         lg:text-[40px]
         "
       >
@@ -40,17 +40,20 @@ function Halaman2() {
         className="
         Helvetica
         flex
-        flex-row 
-        items-center 
-        justify-center 
-        flex-wrap 
-        gap-[20px] 
+        flex-row
+        items-center
+        justify-center
+        flex-wrap
+        gap-[20px]
         w-full
-        
+        md:gap-[30px]
+        md:w-[800px]
         lg:justify-around
-        lg:p-[50px] lg:gap-[50px]
+        lg:p-[50px] 
+        lg:gap-[50px]
         lg:mt-[-50px]
-        lg:w-[1100px] lg:h-[500px]
+        lg:w-[1100px] 
+        lg:h-[500px]
         "
       >
         {programs.map((program, index) => (
@@ -58,23 +61,23 @@ function Halaman2() {
             key={index}
             className="
             text-[16px]
-            flex 
-            justify-center 
-            items-center 
-            w-[112px] 
-            h-[125px] 
-            gap-[10px] 
-            m-[15px] 
-            flex-col-reverse 
-            md:flex-row
-            
+            flex
+            justify-center
+            items-center
+            w-[112px]
+            h-[125px]
+            gap-[10px]
+            m-[15px]
+            flex-col-reverse
+            md:w-[150px]
+            md:h-[170px]
             lg:w-[25%]
             "
           >
             <img
               className="
               w-[60px]
-
+              md:w-[80px]
               lg:w-[100px]
               "
               src={program.image}
@@ -83,11 +86,12 @@ function Halaman2() {
             <h3
               className="
               HelveticaBold
-              w-[60px] 
-              text-[12px] 
+              w-[60px]
+              text-[12px]
               text-white
               text-center
-
+              md:text-[14px]
+              md:w-[80px]
               lg:text-[18px]
               "
             >
