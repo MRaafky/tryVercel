@@ -4,87 +4,125 @@ import './Halaman5.css';
 
 function Halaman5() {
   const cards = Cards; // Array cards dari Card.js
-  const [hoveredCardId, setHoveredCardId] = useState(null); // Untuk interaksi hover
   const containerRef = useRef(null);
   const autoScrollIntervalRef = useRef(null);
   const resumeTimeoutRef = useRef(null);
+  const scrollTimeoutRef = useRef(null);
+  const [hoveredCardId, setHoveredCardId] = useState(null);
+  
+  // State untuk menampilkan nilai scrollLeft
+  const [currentScroll, setCurrentScroll] = useState(0);
+
+  // Deteksi perangkat yang mendukung touch (mobile & tablet)
+  const isTouchDevice =
+    typeof window !== 'undefined' &&
+    ('ontouchstart' in window || navigator.maxTouchPoints > 0);
 
   // Duplikasi card-container sebanyak 5 kali
-  const duplicatedContainers = Array.from({ length: 3 }, () => cards);
+  const duplicatedContainers = Array.from({ length: 5 }, () => cards);
 
-  // Fungsi untuk memulai autoscroll
+  // Fungsi untuk mereset scroll, dengan threshold yang berbeda untuk perangkat touch
+  const resetScroll = () => {
+    const container = containerRef.current;
+    if (!container) return;
+    const maxScrollLeft = container.scrollWidth - container.clientWidth;
+    const resetThreshold = isTouchDevice ? 1 : 10000; // Threshold yang lebih longgar untuk perangkat touch
+    if (container.scrollLeft >= maxScrollLeft - resetThreshold) {
+      container.scrollLeft = 0;
+      setCurrentScroll(0); // Perbarui state scroll
+    }
+  };
+
+  // Fungsi untuk memulai auto scroll
   const startAutoScroll = () => {
     const container = containerRef.current;
     if (!container) return;
     if (!autoScrollIntervalRef.current) {
       autoScrollIntervalRef.current = setInterval(() => {
-        container.scrollLeft += 1; // Geser posisi scroll sebesar 1px
-        // Jika mencapai ujung kanan, reset ke awal
-        if (container.scrollLeft >= container.scrollWidth - container.clientWidth - 1) {
-          container.scrollLeft = 0;
-        }
-      }, 10); // Interval 20ms bisa disesuaikan untuk mengatur kecepatan
+        container.scrollLeft += 1;
+        setCurrentScroll(container.scrollLeft);
+        resetScroll();
+      }, 20);
     }
   };
 
-  // Fungsi untuk menghentikan autoscroll
+  // Fungsi untuk menghentikan auto scroll
   const stopAutoScroll = () => {
     if (autoScrollIntervalRef.current) {
       clearInterval(autoScrollIntervalRef.current);
       autoScrollIntervalRef.current = null;
     }
+    if (resumeTimeoutRef.current) {
+      clearTimeout(resumeTimeoutRef.current);
+      resumeTimeoutRef.current = null;
+    }
   };
 
-  // Gunakan useEffect untuk memastikan autoscroll berjalan segera setelah DOM siap
   useEffect(() => {
     const container = containerRef.current;
     if (!container) return;
 
-    container.scrollLeft = 0; // Pastikan mulai dari posisi awal
+    // Pastikan posisi awal scroll diatur ke 0
+    container.scrollLeft = 0;
+    setCurrentScroll(0);
     startAutoScroll();
 
+    // Update nilai scrollLeft dan reset scroll jika diperlukan
     const handleScroll = () => {
-      // Jaring pengaman: jika mencapai ujung kanan, reset ke awal
-      if (container.scrollLeft >= container.scrollWidth - container.clientWidth - 1) {
-        container.scrollLeft = 0;
+      setCurrentScroll(container.scrollLeft);
+      if (scrollTimeoutRef.current) {
+        clearTimeout(scrollTimeoutRef.current);
       }
+      // Delay sebelum reset (untuk mengantisipasi inertia atau bounce)
+      scrollTimeoutRef.current = setTimeout(() => {
+        resetScroll();
+        setCurrentScroll(container.scrollLeft);
+      }, isTouchDevice ? 0 : 0);
     };
 
     container.addEventListener('scroll', handleScroll);
     return () => {
       container.removeEventListener('scroll', handleScroll);
       stopAutoScroll();
-      if (resumeTimeoutRef.current) clearTimeout(resumeTimeoutRef.current);
+      if (scrollTimeoutRef.current) clearTimeout(scrollTimeoutRef.current);
     };
-  }, []);
+  }, [isTouchDevice]);
 
-  // Deteksi interaksi manual dengan event onWheel
-  const handleWheel = () => {
-    // Hentikan autoscroll saat pengguna melakukan scroll manual
+  // Tangani event sentuhan pada perangkat touch (mobile & tablet)
+  const handleTouchStart = () => {
     stopAutoScroll();
-    if (resumeTimeoutRef.current) {
-      clearTimeout(resumeTimeoutRef.current);
-    }
-    // Setelah 3 detik tanpa interaksi, mulai kembali autoscroll
+  };
+
+  const handleTouchEnd = () => {
     resumeTimeoutRef.current = setTimeout(() => {
+      resetScroll();
       startAutoScroll();
-    }, 1000);
+    }, 300);
   };
 
   return (
-    <div className="bg-[black]">
-      <div  className="containerHal5 flex flex-col items-center">
+    <div className="bg-[#a1a5]">
+      <div className="containerHal5 flex flex-col items-center">
         <h2 className="HelveticaBold text-[white] text-[25px] mt-[100px] lg:text-[40px]">
-          Past Events
+          Jancok 01
         </h2>
-        <div className='blur-container w-[90%]'>
+        {/* Tampilan nilai scrollLeft sehingga Anda dapat memonitornya */}
+        <p className="text-white mt-4">
+          Scroll Position: {currentScroll}
+        </p>
         <div
           ref={containerRef}
-          className="card-container-wrapper w-[90%] h-max flex flex-row overflow-x-scroll relative justify-center items-center mt-[30px] gap-[50px]
-          lg:gap-[50px] lg:mt-[50px]
-          "
-          style={{ scrollBehavior: 'smooth', width: '100%' }}
-          onWheel={handleWheel}
+          className="card-container-wrapper w-[90%] h-max flex flex-row overflow-x-scroll relative justify-center items-center mt-[30px]"
+          style={{
+            scrollBehavior: 'smooth',
+            width: '100%',
+            // Untuk perangkat touch, atur scrolling agar lebih terkontrol
+            WebkitOverflowScrolling: isTouchDevice ? 'auto' : 'touch',
+            touchAction: 'pan-x',
+          }}
+          onWheel={() => {}}
+          onTouchStart={isTouchDevice ? handleTouchStart : undefined}
+          onTouchEnd={isTouchDevice ? handleTouchEnd : undefined}
         >
           {duplicatedContainers.map((cardSet, containerIndex) => (
             <div key={containerIndex} className="card-container flex gap-[50px]">
@@ -125,7 +163,6 @@ function Halaman5() {
               ))}
             </div>
           ))}
-        </div>
         </div>
       </div>
     </div>

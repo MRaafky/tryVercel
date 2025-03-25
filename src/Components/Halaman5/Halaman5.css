@@ -28,6 +28,9 @@
     scroll-behavior: smooth;
     position: relative;
     transition: 0.5s;
+    -webkit-overflow-scrolling: touch; /* untuk momentum scroll di iOS */
+    touch-action: pan-x; /* memastikan swipe secara horizontal */
+    overscroll-behavior-x: contain;
 }
 
 /* .card-container {
