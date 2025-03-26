@@ -35,7 +35,7 @@ function Header({scrollToSection}) {
     pr-[20px]
     bg-none
     fixed top-[0]
-    z-3
+    z-999
 
     md:h-[120px]
 

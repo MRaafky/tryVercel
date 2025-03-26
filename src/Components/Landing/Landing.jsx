@@ -42,8 +42,8 @@ function Landing() {
             mt-[250px]
             text-center
             md:mt-0
-            md:mb-[100px]
             md:text-[60px]
+            md:mt-[200px]
             md:max-w-[800px]
             lg:text-[100px]
             lg:mt-[220px]
@@ -59,7 +59,8 @@ function Landing() {
             mt-[4px]
             text-center
             md:text-[24px]
-            md:mt-[100px]
+            md:mb-[100px]
+            lg:mb-[20px]
             lg:text-[26px]
             lg:mt-[-30px]
           "

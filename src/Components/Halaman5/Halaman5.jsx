@@ -101,9 +101,9 @@ function Halaman5() {
   };
 
   return (
-    <div className="bg-[#a1a5]">
-      <div className="containerHal5 flex flex-col items-center">
-        <h2 className="HelveticaBold text-[white] text-[25px] mt-[100px] lg:text-[40px]">
+    <div className="bg-[#a1a5] ">
+      <div className="containerHal5 flex flex-col items-center justify-center ">
+        <h2 className="HelveticaBold text-[white] text-[25px] mt-[100px] md:text-[40px] lg:text-[40px]">
           Jancok 01
         </h2>
         {/* Tampilan nilai scrollLeft sehingga Anda dapat memonitornya */}
@@ -112,7 +112,7 @@ function Halaman5() {
         </p>
         <div
           ref={containerRef}
-          className="card-container-wrapper w-[90%] h-max flex flex-row overflow-x-scroll relative justify-center items-center mt-[30px]"
+          className="card-container-wrapper w-[90%] h-max flex flex-row overflow-x-scroll relative justify-center items-center mt-[30px] mb-[20px] md:mt-[70px] lg:mt-[50px]"
           style={{
             scrollBehavior: 'smooth',
             width: '100%',
@@ -129,7 +129,7 @@ function Halaman5() {
               {cardSet.map((card) => (
                 <div
                   key={card.id}
-                  className="card grid w-[200px] h-fit flex-shrink-0 lg:w-[350px] lg:min-w-[350px]"
+                  className="card grid w-[200px]  h-fit flex-shrink-0 md:w-[1800px] md:min-w-[370px] lg:w-[3250px] lg:min-w-[350px]"
                   data-id={card.id}
                   onMouseOver={() => setHoveredCardId(card.id)}
                   onMouseOut={() => setHoveredCardId(null)}

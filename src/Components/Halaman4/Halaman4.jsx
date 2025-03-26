@@ -9,9 +9,11 @@ function Halaman4() {
       className="
         w-full 
         min-h-screen 
+        mb-[20px]
         md:h-screen 
         md:max-h-screen 
-        md:overflow-hidden 
+        md:overflow-hidden
+        md:mb-[0] 
         flex flex-col
         justify-center 
         items-center

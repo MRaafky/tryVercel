@@ -12,8 +12,8 @@ function Decor() {
                  like
                  relative
                  w-[60px] left-[50px] top-[120px]
-                 md:w-[75px] md:left-[150px] md:top-[220px]
-                 lg:w-[80px] lg:left-[180px] lg:top-[200px]
+                 md:w-[75px] md:left-[120px] md:top-[320px]
+                 lg:w-[80px] lg:left-[180px] lg:top-[180px]
              "
         src={like}
         alt="Like icon"
@@ -23,8 +23,8 @@ function Decor() {
                  love
                  absolute
                  w-[70px] left-[280px] top-[400px]
-                 md:w-[85px] md:left-[580px] md:top-[490px]
-                 lg:w-[90px] lg:left-[1250px]
+                 md:w-[85px] md:left-[580px] md:top-[610px]
+                 lg:w-[90px] lg:left-[925px] lg:top-[450px]
              "
         src={love}
         alt="Love icon"
@@ -78,7 +78,7 @@ function Decor() {
                  z-[1]
                  rounded-[200px]
                  top-[1000px] right-[-50px]
-                 md:w-[450px] md:h-[450px] md:right-[70px] md:top-[1320px] md:blur-[140px]
+                 md:w-[450px] md:h-[450px] md:right-[10px] md:top-[1320px] md:blur-[170px]
                  lg:w-[450px] lg:h-[450px] lg:rounded-[50%] lg:right-[50px] lg:top-[900px] lg:blur-[200px]
              "
       ></div>

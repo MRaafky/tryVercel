@@ -50,9 +50,9 @@ function Halaman2() {
         md:w-[800px]
         lg:justify-around
         lg:p-[50px] 
-        lg:gap-[50px]
-        lg:mt-[-50px]
-        lg:w-[1100px] 
+        lg:gap-[30px]
+        lg:mt-[10px]
+        lg:w-[900px] 
         lg:h-[500px]
         "
       >
