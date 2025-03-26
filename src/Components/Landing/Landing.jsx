@@ -19,6 +19,7 @@ function Landing() {
         z-[2]
         relative
         md:px-4
+        lg:px-[0]
       "
     >
       <div 
@@ -45,6 +46,8 @@ function Landing() {
             md:text-[60px]
             md:max-w-[800px]
             lg:text-[100px]
+            lg:mt-[220px]
+            lg:mb-[0px]
           "
         >
           Unteyo Journey
@@ -58,7 +61,7 @@ function Landing() {
             md:text-[24px]
             md:mt-[100px]
             lg:text-[26px]
-            lg:mt-[0px]
+            lg:mt-[-30px]
           "
         >
           Greeting Quality Students
@@ -91,6 +94,7 @@ function Landing() {
             lg:h-[60px]
             lg:text-[17px]
             lg:rounded-[15px]
+            lg:mt-[150px]
           "
         >
           Explore Our Journey
@@ -102,7 +106,7 @@ function Landing() {
             mt-[9px]
             text-center
             lg:text-[15px]
-            lg:mt-[30px]
+            lg:mt-[0px]
           "
         >
           #BeWise

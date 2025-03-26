@@ -42,7 +42,7 @@ function Header({scrollToSection}) {
     lg:flex-row-reverse
     lg:h-[120px]
     lg:pt-[10px]
-    lg:pl-[200px] lg:pr-[130px]
+    lg:pl-[150px] lg:pr-[50px]
     `}
     >
          <FontAwesomeIcon icon={faBars} 
@@ -70,7 +70,7 @@ function Header({scrollToSection}) {
         cursor-[pointer]
 
         lg:flex lg:flex-row
-        lg:gap-[100px]
+        lg:gap-[70px]
         lg:p-[30px]
         lg:text-[18px]
         "
