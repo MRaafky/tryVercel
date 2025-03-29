@@ -159,25 +159,25 @@ function Footer() {
         <div className="text-center pt-6 border-t border-gray-700">
           <div className="flex flex-wrap justify-center space-x-2 md:space-x-4 mb-2 text-xs">
             <a
-              href="#privacy"
+              href="/#/privacy"
               className="text-gray-400 hover:text-white transition-colors"
             >
               Privacy Policy
             </a>
             <a
-              href="#terms"
+              href="/#/terms"
               className="text-gray-400 hover:text-white transition-colors"
             >
               Terms and Conditions
             </a>
             <a
-              href="#cookies"
+              href="/#/cookies"
               className="text-gray-400 hover:text-white transition-colors"
             >
               Cookie Policy
             </a>
             <a
-              href="#recruitment"
+              href="/#/recruitment"
               className="text-gray-400 hover:text-white transition-colors"
             >
               Recruitment Privacy
