@@ -22,7 +22,7 @@ function MainContent() {
   return (
     <div className="bg-[black]">
         <Header scrollToSection={scrollToSection}></Header>
-      <Landing></Landing>
+      <Landing scrollToSection={scrollToSection}></Landing>
       <Decor></Decor>
       <Halaman1></Halaman1>
       <Halaman2></Halaman2>

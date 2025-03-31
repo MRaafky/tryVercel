@@ -20,7 +20,7 @@ function Halaman2() {
       items-center
       pt-[128px]
       md:pt-[80px]
-      lg:pt-[50px]
+      lg:pt-[120px]
       "
     >
       <h2

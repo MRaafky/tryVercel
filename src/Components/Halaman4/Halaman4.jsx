@@ -18,6 +18,8 @@ function Halaman4() {
         justify-center 
         items-center
         relative
+
+        lg:pt-[100px]
       "
     >
       <div 

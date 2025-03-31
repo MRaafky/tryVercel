@@ -2,7 +2,7 @@ import React from "react";
 import "./Landing.css";
 import "../font.css";
 
-function Landing() {
+function Landing({scrollToSection}) {
   return (
     <div
       className="
@@ -67,7 +67,7 @@ function Landing() {
         >
           Greeting Quality Students
         </p>
-        <button
+        <button 
           className="
             btnLanding
             Helvetica
@@ -97,6 +97,7 @@ function Landing() {
             lg:rounded-[15px]
             lg:mt-[150px]
           "
+          onClick={() => scrollToSection("aboutUs")}
         >
           Explore Our Journey
         </button>
