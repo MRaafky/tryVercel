@@ -28,13 +28,10 @@
 }
 
 .card-container-wrapper {
-    overflow-x: auto;
+    overflow-x: scroll;
     scroll-behavior: smooth;
-    position: relative;
+    scroll-snap-type: x mandatory;
     transition: 0.5s;
-    -webkit-overflow-scrolling: touch; /* untuk momentum scroll di iOS */
-    touch-action: pan-x; /* memastikan swipe secara horizontal */
-    overscroll-behavior-x: contain;
 }
 
 .blur-container {
@@ -62,16 +59,6 @@
 .blur-container::after {
     right: 0;
     background: linear-gradient(to left, rgba(0,0,0,1) 40%, transparent);
-}
-
-/* Scrollbar hide */
-.scrollbar-hide::-webkit-scrollbar {
-    display: none;
-}
-
-.scrollbar-hide {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
 }
 
 /* Responsive adjustments */
