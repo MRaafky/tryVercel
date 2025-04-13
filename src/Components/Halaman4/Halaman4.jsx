@@ -33,6 +33,7 @@ function Halaman4() {
           flex flex-col
           justify-center 
           items-center
+          lg:gap-[0px]
         "
       >
         <h2
@@ -44,6 +45,7 @@ function Halaman4() {
           md:mt-0
           md:text-[35px]
           lg:text-[40px]
+          lg:mt-[120px]
           "
         >
           Upcoming Event
@@ -57,6 +59,7 @@ function Halaman4() {
           md:gap-[50px]
           lg:flex-row-reverse
           lg:gap-[100px]
+          lg:mt-[50px]
           "
         >
           <img

@@ -27,7 +27,7 @@ function Footer() {
     {
       title: "Developer",
       items: [
-        { name: "About Developer", link: "#developer" }
+        { name: "About Developer", link: "/#/AboutDeveloper" }
       ],
     },
   ];

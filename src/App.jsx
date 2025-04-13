@@ -6,6 +6,7 @@ import PrivacyPolicy from "./Components/PrivacyPolicy/PrivacyPolicy";
 import NotFound from "./Components/NotFound";
 import TermsAndConditions from "./Components/TermsAndCondition/TermsAndCondtion";
 import RecruitmentPrivacy from "./Components/RecruitmentPrivacy/RecruitmentPrivacy";
+import AboutDeveloper from "./Components/AboutDeveloper/AboutDeveloper";
 import "./App.css";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/terms" element={<TermsAndConditions/>}></Route>
           <Route path="/recruitment" element={<RecruitmentPrivacy/>}></Route>
           <Route path="*" element={<NotFound/>}></Route>
+          <Route path="/AboutDeveloper" element={<AboutDeveloper/>}></Route>
         </Routes>
       </Router>
     </div>

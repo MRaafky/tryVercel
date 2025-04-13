@@ -24,7 +24,7 @@ function Decor() {
                  absolute
                  w-[70px] left-[280px] top-[400px]
                  md:w-[85px] md:left-[580px] md:top-[610px]
-                 lg:w-[90px] lg:left-[925px] lg:top-[450px]
+                 lg:w-[90px] lg:left-[1250px] lg:top-[450px]
              "
         src={love}
         alt="Love icon"
@@ -39,7 +39,7 @@ function Decor() {
                  left-[290px]
                  rounded-[50px]
                  md:left-[600px] md:top-[-150px] md:w-[350px] md:h-[350px] md:blur-[100px]
-                 lg:left-[1150px] lg:top-[-180px] lg:blur-[100px]
+                 lg:left-[1250px] lg:top-[-180px] lg:blur-[125px]
              "
       ></div>
       <WaveAnimation className="wavecontainer" />

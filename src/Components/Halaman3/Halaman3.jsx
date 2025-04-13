@@ -68,8 +68,6 @@ function Halaman3() {
       justify-center
       items-center
       z-[2]
-
-      
       "
     >
       <h2
@@ -79,6 +77,7 @@ function Halaman3() {
       mt-[100px]
       md:text-[35px]
       lg:text-[40px]
+      lg:mt-[120px]
       "
       >
         Popular Post

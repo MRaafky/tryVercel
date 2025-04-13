@@ -37,13 +37,13 @@ function Halaman6() {
         >
           <motion.h2
             variants={itemVariants}
-            className="text-4xl md:text-6xl font-extrabold text-white tracking-tight"
+            className="HelveticaBold text-4xl md:text-6xl font-extrabold text-white tracking-tight"
           >
             Let's Connect
           </motion.h2>
           <motion.h3
             variants={itemVariants}
-            className="text-3xl md:text-5xl lg:text-5xl font-bold text-white  inline-block px-4 py-2"
+            className="HelveticaBold text-3xl md:text-5xl lg:text-5xl font-bold text-white  inline-block px-4 py-2"
           >
             with Us
           </motion.h3>
