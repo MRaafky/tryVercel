@@ -78,7 +78,7 @@ function Halaman6() {
               <img
                 src={Hubungins}
                 alt="Hubungins"
-                className="w-24 mx-auto grayscale hover:grayscale-0 transition-all duration-300"
+                className="w-24 mx-auto grayscale hover:grayscale-0 active:grayscale-0 transition-all duration-300"
               />
             </motion.div>
 
@@ -90,12 +90,12 @@ function Halaman6() {
                 <img
                   src={Terai}
                   alt="Terai"
-                  className="w-24 grayscale hover:grayscale-0 transition-all duration-300"
+                  className="w-24 grayscale hover:grayscale-0 active:grayscale-0  transition-all duration-300"
                 />
                 <img
                   src={Perspektif}
                   alt="Perspektif"
-                  className="w-24 grayscale hover:grayscale-0 transition-all duration-300"
+                  className="w-24 grayscale hover:grayscale-0 active:grayscale-0 transition-all duration-300"
                 />
               </div>
             </motion.div>
