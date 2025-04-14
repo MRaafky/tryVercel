@@ -10,10 +10,10 @@ function AboutDeveloper() {
         {
             nama: "Muhammad Raafki",
             foto: Raafki,
-            Whatsapp: "",
+            Whatsapp: "https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=raafkieducation@@gmail.com",
             Instagram: "https://www.instagram.com/rsfakiii/",
             Linkedin: "https://www.linkedin.com/in/muhammad-raafky-1753b3285/",
-            text: "Developer Fullstack dan Analis Data freelance dengan semangat tinggi untuk memperluas pengalaman praktis sambil memberikan solusi yang berdampak dalam lingkungan kerja yang dinamis.",
+            text: "Freelance Fullstack Developer and Data Analyst with a passion for expanding practical experience while delivering impactful solutions in a dynamic work environmen",
         },
         {
             nama: "Farhan Dwiki Ardhani",
