@@ -13,7 +13,7 @@ function AboutDeveloper() {
             Whatsapp: "",
             Instagram: "https://www.instagram.com/rsfakiii/",
             Linkedin: "https://www.linkedin.com/in/muhammad-raafky-1753b3285/",
-            text: "Freelance Fullstack Developer and Data Analyst that looking for experience and making contribution",
+            text: "Developer Fullstack dan Analis Data freelance dengan semangat tinggi untuk memperluas pengalaman praktis sambil memberikan solusi yang berdampak dalam lingkungan kerja yang dinamis.",
         },
         {
             nama: "Farhan Dwiki Ardhani",
