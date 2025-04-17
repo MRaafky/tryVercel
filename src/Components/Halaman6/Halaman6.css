@@ -27,9 +27,6 @@
   }
 }
 
-.containerBlob {
-}
-
 .blob {
   animation: move 8s ease-in-out infinite;
 }
