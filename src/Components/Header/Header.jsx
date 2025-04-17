@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import logo from "../../assets/logo.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import hamburger from "../../assets/lineicons_menu-cheesburger.png"
 import "./Header.css"
 
 function Header({scrollToSection}) {
@@ -45,7 +46,7 @@ function Header({scrollToSection}) {
     lg:pl-[150px] lg:pr-[50px]
     `}
     >
-         <FontAwesomeIcon icon={faBars} 
+         {/* <FontAwesomeIcon icon={faBars} 
          onClick={onNav}
          class="
          onHamburger
@@ -59,7 +60,8 @@ function Header({scrollToSection}) {
         md:top-[-10px]
 
         lg:hidden
-        " />
+        " /> */}
+        <img src={hamburger} onClick={onNav} className='text-[white] w-[70px] h-[70px] self-center'></img>
         <ul
         class="
         lgHeader
